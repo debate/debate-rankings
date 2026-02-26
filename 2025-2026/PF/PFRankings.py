@@ -296,6 +296,11 @@ add_tournament("GoldenDesert", 4)
 add_tournament("UniversityOfPennsylvania", 8)
 add_tournament("Bellaire", 4)
 add_tournament("Stanford", 8)
+add_tournament("UpperStClair-ThreeRivers", 1)
+add_tournament("Harvard", 8)
+add_tournament("Berkeley", 8)
+add_tournament("TOCDigital2", 4)
+
 
 
 elos = sorted(elos_dict.items(), key=lambda item: item[1], reverse=True)
