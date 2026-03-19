@@ -107,7 +107,7 @@ def add_elims(tournament, teamsDict, elos_dict, bid):
                 re.sub(r"\t+", " ", item) for item in line
             ]  # Sanitizes test (replaces tabs with spaces)
             line = [item.replace("\n", "") for item in line]  # Strips newlines
-            print(line)
+            # print(line)
             try:
                 team1, team2, judge, votes, result = tuple(line[0:5])
             except:
@@ -179,9 +179,9 @@ with open("25-26-PFCT-Roster.csv", "r") as fp:
         ddTeams += [line.split(",")[0].strip()]
 
 nsdTeams = []
-# with open("NSD.csv", "r") as fp:
-#     for line in fp:
-#         nsdTeams += [line.split(",")[0].strip().split()[-1]]
+with open("PF_NSD_Roster.csv", "r") as fp:
+    for line in fp:
+        nsdTeams += [line.strip()]
 
 nsdLastNames = [string.split()[-1].strip() if string.split() else "" for string in nsdTeams]
 # nsdTeams = ["East Ridge MV", "FW CB", "Avenues: The World CB"]
@@ -189,9 +189,10 @@ nsdLastNames = [string.split()[-1].strip() if string.split() else "" for string 
 
 def write_to_csv(elosList):
     """write the rankings to the csv"""
-    add = "Rank,School,Name,Elo,DD Student\n"  # ,NSD Student\n"
-    top_500_add = "Rank,School,Name,Elo,DD Student\n"  # ,NSD Student\n"
+    add = "Rank,School,Name,Elo,DD Student,NSD Student\n"
+    top_500_add = "Rank,School,Name,Elo,DD Student,NSD Student\n"
     counter = 0
+    nsd_count = 0
     for team, eloSchool in elosList:
         elo, school = eloSchool[0], eloSchool[1]
         counter += 1
@@ -223,15 +224,19 @@ def write_to_csv(elosList):
             + names
             + ","
             + str(round(elo * 1000) / 1000)
-            + f",{dd},\n "
-            # + nsd
-            # + ",\n"
+            + f",{dd},"
+            + nsd
+            + ",\n"
         )
 
         add += record
 
         if counter < 501:
             top_500_add += record
+        if counter < 101 and nsd == "Y":
+            nsd_count += 1
+
+    print(f"Number of NSD teams in top 100: {nsd_count}")
 
     with open("PFRankings.csv", "w") as fp:
         fp.write(add[:-1])
@@ -296,8 +301,13 @@ add_tournament("GoldenDesert", 4)
 add_tournament("UniversityOfPennsylvania", 8)
 add_tournament("Bellaire", 4)
 add_tournament("Stanford", 8)
+add_tournament("ThreeRivers", 1)
+add_tournament("Harvard", 8)
+add_tournament("Berkeley", 8)
+add_tournament("TOCDigital2", 4)
+add_tournament("TOCDigital3", 4)
 
 
 elos = sorted(elos_dict.items(), key=lambda item: item[1], reverse=True)
 write_to_csv(elos)
-print(ddTeams)
+# print(ddTeams)

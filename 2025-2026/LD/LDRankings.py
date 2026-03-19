@@ -164,18 +164,17 @@ with open("25-26-LDCT-Roster.csv", "r") as fp:
 print(ddTeams)
 
 nsdTeams = []
-with open("NSD.csv", "r") as fp:
+with open("LD_NSD_Roster.csv", "r") as fp:
     for line in fp:
-        nsdTeams += [line.split(",")[0].strip().title()]
-
-# print(nsdTeams)
+        nsdTeams += [line.strip()]
 
 
 def write_to_csv(elosList):
     """write the rankings to the csv"""
-    add = "Rank,School,Name,Elo,DD Student\n"  # ,NSD Student\n"
-    top_500_add = "Rank,School,Name,Elo,DD Student\n"  # ,NSD Student\n"
+    add = "Rank,School,Name,Elo,DD Student,NSD Student\n"
+    top_500_add = "Rank,School,Name,Elo,DD Student,NSD Student\n"
     counter = 0
+    nsd_count = 0
     for team, eloSchool in elosList:
         elo, school = eloSchool[0], eloSchool[1]
         counter += 1
@@ -200,9 +199,9 @@ def write_to_csv(elosList):
             + name
             + ","
             + str(round(elo * 1000) / 1000)
-            + f",{dd},\n "
-            # + nsd
-            # + ",\n"
+            + f",{dd},"
+            + nsd
+            + ",\n"
         )
 
         add += record
@@ -210,11 +209,17 @@ def write_to_csv(elosList):
         if counter < 501:
             top_500_add += record
 
+        if counter < 101 and nsd == "Y":
+            nsd_count += 1
+
     with open("LDRankings.csv", "w") as fp:
         fp.write(add[:-1])
 
     with open("LDRankings_top500.csv", "w") as fp:
         fp.write(top_500_add[:-1])
+
+    # Print number of NSD teams in top 100
+    print(f"Number of NSD teams in top 100: {nsd_count}")
 
 
 # Bid level: Finals (1), Semifinals (2), Quarterfinals (4), Octofinals (8)
@@ -260,6 +265,13 @@ add_tournament("Columbia", 1)
 add_tournament("GoldenDesert", 2)
 add_tournament("UniversityOfPennsylvania", 1)
 add_tournament("Stanford", 4)
+add_tournament("ThreeRivers", 1)
+add_tournament("Harvard", 8)
+add_tournament("Berkeley", 8)
+add_tournament("TOCDigital2", 4)
+add_tournament("TOCDigital3", 4)
+add_tournament("USC", 2)
+
 
 elos = sorted(elos_dict.items(), key=lambda item: item[1], reverse=True)
 write_to_csv(elos)
