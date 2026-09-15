@@ -83,9 +83,10 @@ def validate_dataset(entries: pd.DataFrame, rounds: list[DownloadedRound]) -> No
                     raise ImportValidationError(
                         f"round {round_item.round_id} contains unknown entry code: {code}"
                     )
-        valid_winners = data["Win"].str.lower().apply(
-            lambda winner: not winner.strip()
-            or any(side in winner for side in ("aff", "neg", "pro", "con"))
+        valid_winners = data["Win"].apply(
+            lambda winner: pd.isna(winner)
+            or not str(winner).strip()
+            or any(side in str(winner).lower() for side in ("aff", "neg", "pro", "con"))
         )
         if not valid_winners.all():
             bad_winner = data.loc[~valid_winners, "Win"].iloc[0]

@@ -152,3 +152,15 @@ class DatasetValidationTest(unittest.TestCase):
         )
 
         validate_dataset(entries, [round_item])
+
+    def test_accepts_missing_winner_without_attribute_error(self):
+        entries = pd.DataFrame([
+            {"Institution": "A", "Location": "CA/US", "Entry": "A One", "Code": "A 1"},
+            {"Institution": "B", "Location": "CA/US", "Entry": "B Two", "Code": "B 2"},
+        ])
+        round_item = DownloadedRound(
+            1, 1, "Round 1", Path("round.csv"),
+            pd.DataFrame([{"Aff": "A 1", "Neg": "B 2", "Win": float("nan")}]),
+        )
+
+        validate_dataset(entries, [round_item])
