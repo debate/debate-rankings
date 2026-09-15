@@ -6,10 +6,12 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
+from uuid import uuid4
 
 import pandas as pd
 
 SUPPORTED_FORMATS = {"hsld", "hspf", "cpd"}
+OWNERSHIP_MARKER = ".tabroom-import-owner"
 
 
 class ImportValidationError(ValueError):
@@ -176,6 +178,13 @@ def _metadata(
     }
 
 
+def _target_is_owned(target: Path, token: str) -> bool:
+    try:
+        return (target / OWNERSHIP_MARKER).read_text() == token
+    except OSError:
+        return False
+
+
 def install_import(
     project_root: Path,
     request: ImportRequest,
@@ -215,6 +224,9 @@ def install_import(
         staged = temporary_root / request.slug
         backup = temporary_root / f"{request.slug}-backup"
         staged.mkdir()
+        token = uuid4().hex
+        staged_marker = staged / OWNERSHIP_MARKER
+        staged_marker.write_text(token)
         entries.to_csv(staged / "entries.csv", index=False)
         for item in loaded_rounds:
             item.data.to_csv(staged / round_filename(item), index=False)
@@ -234,7 +246,6 @@ def install_import(
         )
 
         backup_created = False
-        target_claimed = False
         staged_installed = False
         try:
             if replace_existing:
@@ -244,7 +255,7 @@ def install_import(
                 staged.replace(target)
             else:
                 target.mkdir()
-                target_claimed = True
+                staged_marker.replace(target / OWNERSHIP_MARKER)
                 for staged_file in staged.iterdir():
                     staged_file.replace(target / staged_file.name)
             staged_installed = True
@@ -252,13 +263,23 @@ def install_import(
             temporary_config = config_path.with_suffix(".json.tmp")
             temporary_config.write_text(json.dumps(config, indent=2) + "\n")
             temporary_config.replace(config_path)
+            (target / OWNERSHIP_MARKER).unlink()
         except Exception:
-            if (staged_installed or target_claimed) and target.exists():
-                shutil.rmtree(target)
-            if backup_created and backup.exists():
-                backup.replace(target)
-            if staged_installed:
-                config_path.write_text(original_config_text)
+            try:
+                if _target_is_owned(target, token):
+                    shutil.rmtree(target)
+            except Exception:
+                pass
+            try:
+                if backup_created and backup.exists() and not target.exists():
+                    backup.replace(target)
+            except Exception:
+                pass
+            try:
+                if staged_installed:
+                    config_path.write_text(original_config_text)
+            except Exception:
+                pass
             raise
 
     return InstalledImport(target, format_name, len(entries), len(loaded_rounds))

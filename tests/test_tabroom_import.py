@@ -1,4 +1,5 @@
 import json
+import shutil
 import sys
 import tempfile
 import unittest
@@ -357,3 +358,29 @@ class InstallImportTest(unittest.TestCase):
                     install_import(root, make_ukso_request(), "Season Opener", field_path, rounds)
 
             self.assertEqual((target / "keep.txt").read_text(), "user data")
+
+    def test_non_refresh_preserves_replaced_target_after_config_failure(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config_path = root / "config" / "hsld-config.json"
+            config_path.parent.mkdir()
+            original_config = json.dumps({"tournaments": ["loyola"], "majors": [], "multi_team_debaters": []})
+            config_path.write_text(original_config)
+            target = root / "tournaments" / "hsld" / "ukso"
+            field_path, rounds = make_valid_exports(root)
+            original_replace = Path.replace
+
+            def replace_target_then_fail_config(source: Path, destination: Path):
+                if source.name == "hsld-config.json.tmp" and destination == config_path:
+                    shutil.rmtree(target)
+                    target.mkdir()
+                    (target / "keep.txt").write_text("user data")
+                    raise OSError("config failed")
+                return original_replace(source, destination)
+
+            with patch.object(Path, "replace", autospec=True, side_effect=replace_target_then_fail_config):
+                with self.assertRaisesRegex(OSError, "config failed"):
+                    install_import(root, make_ukso_request(), "Season Opener", field_path, rounds)
+
+            self.assertEqual((target / "keep.txt").read_text(), "user data")
+            self.assertEqual(config_path.read_text(), original_config)
