@@ -1,5 +1,8 @@
 from dataclasses import dataclass
+from pathlib import Path
 from urllib.parse import parse_qs, urlparse
+
+import pandas as pd
 
 SUPPORTED_FORMATS = {"hsld", "hspf", "cpd"}
 
@@ -15,6 +18,77 @@ class ImportRequest:
     slug: str
     event_name: str
     format_override: str | None = None
+
+
+@dataclass(frozen=True)
+class DownloadedRound:
+    ordinal: int
+    round_id: int
+    name: str
+    path: Path
+    data: pd.DataFrame | None = None
+
+
+def _clean_columns(frame: pd.DataFrame) -> pd.DataFrame:
+    cleaned = frame.copy()
+    cleaned.columns = [" ".join(str(column).split()) for column in cleaned.columns]
+    return cleaned
+
+
+def normalize_entries(path: Path) -> pd.DataFrame:
+    entries = _clean_columns(pd.read_csv(path, keep_default_na=False))
+    required = ["Institution", "Location", "Entry", "Code"]
+    missing = [column for column in required if column not in entries.columns]
+    if missing:
+        raise ImportValidationError(f"field export missing columns: {', '.join(missing)}")
+    for column in required:
+        entries[column] = entries[column].astype(str).str.strip()
+    return entries
+
+
+def normalize_round(path: Path) -> pd.DataFrame:
+    round_data = _clean_columns(pd.read_csv(path, keep_default_na=False))
+    round_data = round_data.rename(columns={"Pro": "Aff", "Con": "Neg"})
+    required = ["Aff", "Neg", "Win"]
+    missing = [column for column in required if column not in round_data.columns]
+    if missing:
+        raise ImportValidationError(f"round export missing columns: {', '.join(missing)}")
+    for column in required:
+        round_data[column] = round_data[column].astype(str).str.strip()
+    return round_data
+
+
+def validate_dataset(entries: pd.DataFrame, rounds: list[DownloadedRound]) -> None:
+    if entries.empty:
+        raise ImportValidationError("field export is empty")
+    if entries["Code"].eq("").any() or entries["Code"].duplicated().any():
+        raise ImportValidationError("entry codes must be nonempty and unique")
+    if not rounds:
+        raise ImportValidationError("event has no published round results")
+    round_ids = [round_item.round_id for round_item in rounds]
+    ordinals = [round_item.ordinal for round_item in rounds]
+    if len(round_ids) != len(set(round_ids)):
+        raise ImportValidationError("round IDs must be unique")
+    if ordinals != sorted(ordinals) or len(ordinals) != len(set(ordinals)):
+        raise ImportValidationError("round ordinals must be unique and sorted")
+
+    known_codes = set(entries["Code"])
+    for round_item in rounds:
+        data = round_item.data if round_item.data is not None else normalize_round(round_item.path)
+        for column in ("Aff", "Neg"):
+            for code in data[column]:
+                if not code or "bye" in code.lower():
+                    continue
+                if code not in known_codes:
+                    raise ImportValidationError(
+                        f"round {round_item.round_id} contains unknown entry code: {code}"
+                    )
+        valid_winners = data["Win"].str.lower().isin({"", "aff", "neg", "pro", "con"})
+        if not valid_winners.all():
+            bad_winner = data.loc[~valid_winners, "Win"].iloc[0]
+            raise ImportValidationError(
+                f"round {round_item.round_id} contains unsupported winner: {bad_winner}"
+            )
 
 
 def parse_tabroom_id(url: str, parameter: str) -> int:
