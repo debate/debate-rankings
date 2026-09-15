@@ -14,9 +14,10 @@
     "Ezra Segal"
   ],
   "tournaments": [
+    "loyola-rr",
     "loyola",
     "ukso",
-    "grapevine",
+    "grapevine"
   ],
   "topic_boundaries": {
     "sepoct_end": "meadows",
