@@ -334,7 +334,7 @@ class InstallImportTest(unittest.TestCase):
             self.assertEqual((target / "keep.txt").read_text(), "user data")
             self.assertEqual(config_path.read_text(), original_config)
 
-    def test_refuses_slug_created_before_live_install_without_refresh(self):
+    def test_refuses_slug_claimed_before_atomic_target_create_without_refresh(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             config_path = root / "config" / "hsld-config.json"
@@ -344,20 +344,15 @@ class InstallImportTest(unittest.TestCase):
             )
             target = root / "tournaments" / "hsld" / "ukso"
             field_path, rounds = make_valid_exports(root)
-            original_exists = Path.exists
-            target_checks = 0
+            original_mkdir = Path.mkdir
 
-            def create_competing_target(path: Path):
-                nonlocal target_checks
+            def create_competing_target(path: Path, *args, **kwargs):
                 if path == target:
-                    target_checks += 1
-                    if target_checks == 2:
-                        target.mkdir()
-                        (target / "keep.txt").write_text("user data")
-                        return True
-                return original_exists(path)
+                    original_mkdir(path)
+                    (target / "keep.txt").write_text("user data")
+                return original_mkdir(path, *args, **kwargs)
 
-            with patch.object(Path, "exists", autospec=True, side_effect=create_competing_target):
+            with patch.object(Path, "mkdir", autospec=True, side_effect=create_competing_target):
                 with self.assertRaisesRegex(FileExistsError, "ukso"):
                     install_import(root, make_ukso_request(), "Season Opener", field_path, rounds)
 

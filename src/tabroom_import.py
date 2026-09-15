@@ -233,23 +233,27 @@ def install_import(
             + "\n"
         )
 
-        had_existing_target = target.exists()
-        if had_existing_target and not replace_existing:
-            raise FileExistsError(f"tournament slug already exists: {request.slug}")
         backup_created = False
+        target_claimed = False
         staged_installed = False
         try:
-            if had_existing_target:
-                target.replace(backup)
-                backup_created = True
-            staged.replace(target)
+            if replace_existing:
+                if target.exists():
+                    target.replace(backup)
+                    backup_created = True
+                staged.replace(target)
+            else:
+                target.mkdir()
+                target_claimed = True
+                for staged_file in staged.iterdir():
+                    staged_file.replace(target / staged_file.name)
             staged_installed = True
 
             temporary_config = config_path.with_suffix(".json.tmp")
             temporary_config.write_text(json.dumps(config, indent=2) + "\n")
             temporary_config.replace(config_path)
         except Exception:
-            if staged_installed and target.exists():
+            if (staged_installed or target_claimed) and target.exists():
                 shutil.rmtree(target)
             if backup_created and backup.exists():
                 backup.replace(target)
