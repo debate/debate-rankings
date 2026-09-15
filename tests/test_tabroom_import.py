@@ -140,3 +140,15 @@ class DatasetValidationTest(unittest.TestCase):
         )
         with self.assertRaisesRegex(ImportValidationError, "unsupported winner: Judge"):
             validate_dataset(entries, [round_item])
+
+    def test_accepts_tabroom_score_with_neg_winner(self):
+        entries = pd.DataFrame([
+            {"Institution": "A", "Location": "CA/US", "Entry": "A One", "Code": "A 1"},
+            {"Institution": "B", "Location": "CA/US", "Entry": "B Two", "Code": "B 2"},
+        ])
+        round_item = DownloadedRound(
+            1, 1, "Round 1", Path("round.csv"),
+            pd.DataFrame([{"Aff": "A 1", "Neg": "B 2", "Win": "2-0\tNEG"}]),
+        )
+
+        validate_dataset(entries, [round_item])
