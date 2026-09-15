@@ -9,6 +9,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
+import main as rankings_main
 from main import RankingSystem
 
 
@@ -105,6 +106,41 @@ class RankingStatisticsTest(unittest.TestCase):
                 self.assertTrue(pd.isna(output.loc["Charlie", "Aff Elim Win Rate"]))
                 self.assertTrue(pd.isna(output.loc["Charlie", "Neg Elim Win Rate"]))
                 self.assertEqual(output.loc["Bob", "Neg Elim Win Rate"], 100.0)
+
+
+class TopicTournamentPartitionTest(unittest.TestCase):
+    def test_keeps_tournaments_in_current_topic_until_boundary_exists(self):
+        tournaments = ["loyola-rr", "loyola", "ukso", "grapevine"]
+
+        partitions = rankings_main.partition_tournaments_by_topic(
+            tournaments,
+            {"sepoct_end": "meadows", "novdec_end": "isidore"},
+        )
+
+        self.assertEqual(partitions, (tournaments, [], []))
+
+    def test_partitions_topics_through_inclusive_boundaries(self):
+        tournaments = [
+            "early",
+            "sepoct-last",
+            "middle",
+            "novdec-last",
+            "late",
+        ]
+
+        partitions = rankings_main.partition_tournaments_by_topic(
+            tournaments,
+            {"sepoct_end": "sepoct-last", "novdec_end": "novdec-last"},
+        )
+
+        self.assertEqual(
+            partitions,
+            (
+                ["early", "sepoct-last"],
+                ["middle", "novdec-last"],
+                ["late"],
+            ),
+        )
 
 
 if __name__ == "__main__":

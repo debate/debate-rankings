@@ -314,6 +314,27 @@ class RankingSystem:
 
 
 
+def partition_tournaments_by_topic(
+    tournaments: list, boundaries: dict
+) -> tuple[list, list, list]:
+    """Partition tournaments into Sept/Oct, Nov/Dec, and Jan/Feb topics."""
+    partitions = []
+    start = 0
+
+    for boundary_name in ("sepoct_end", "novdec_end"):
+        boundary = boundaries.get(boundary_name)
+        try:
+            end = tournaments.index(boundary, start) + 1
+        except ValueError:
+            end = len(tournaments)
+
+        partitions.append(tournaments[start:end])
+        start = end
+
+    partitions.append(tournaments[start:])
+    return tuple(partitions)
+
+
 def main():
     ld_config_path = "config/hsld-config.json"
     ld_format_dir = "hsld"
@@ -331,28 +352,22 @@ def main():
     ld_config = load_config(ld_config_path)
     all_tournaments = ld_config.get("tournaments", [])
     boundaries = ld_config.get("topic_boundaries", {})
-    sepoct_end = boundaries.get("sepoct_end")
-    novdec_end = boundaries.get("novdec_end")
+    topic_tournaments = partition_tournaments_by_topic(all_tournaments, boundaries)
 
-    sepoct_idx = all_tournaments.index(sepoct_end) + 1 if sepoct_end else 0
-    novdec_idx = all_tournaments.index(novdec_end) + 1 if novdec_end else sepoct_idx
+    for topic_name, topic_slug, tournaments in zip(
+        ("Sept/Oct", "Nov/Dec", "Jan/Feb"),
+        ("sepoct", "novdec", "janfeb"),
+        topic_tournaments,
+    ):
+        if not tournaments:
+            continue
 
-    sepoct_tournaments = all_tournaments[:sepoct_idx]
-    novdec_tournaments = all_tournaments[sepoct_idx:novdec_idx]
-    janfeb_tournaments = all_tournaments[novdec_idx:]
-
-    print(f"\nGenerating LD Sept/Oct rankings ({sepoct_tournaments[0]} → {sepoct_tournaments[-1]})")
-    sepoct_system = RankingSystem(ld_config_path, ld_format_dir)
-    sepoct_system.run(f"{ld_format_dir}_sepoct_", tournaments=sepoct_tournaments)
-
-    print(f"\nGenerating LD Nov/Dec rankings ({novdec_tournaments[0]} → {novdec_tournaments[-1]})")
-    novdec_system = RankingSystem(ld_config_path, ld_format_dir)
-    novdec_system.run(f"{ld_format_dir}_novdec_", tournaments=novdec_tournaments)
-
-    if janfeb_tournaments:
-        print(f"\nGenerating LD Jan/Feb rankings ({janfeb_tournaments[0]} → {janfeb_tournaments[-1]})")
-        janfeb_system = RankingSystem(ld_config_path, ld_format_dir)
-        janfeb_system.run(f"{ld_format_dir}_janfeb_", tournaments=janfeb_tournaments)
+        print(
+            f"\nGenerating LD {topic_name} rankings "
+            f"({tournaments[0]} → {tournaments[-1]})"
+        )
+        topic_system = RankingSystem(ld_config_path, ld_format_dir)
+        topic_system.run(f"{ld_format_dir}_{topic_slug}_", tournaments=tournaments)
 
     print("\nLD Ranking generation complete!")
 

@@ -1,658 +1,429 @@
 Rank,School,Name,Rating,Aff Win Rate,Neg Win Rate,Aff Elim Win Rate,Neg Elim Win Rate
-1,Harker,Siddhartha Daswani,2130.11,62.5,100.0,60.0,100.0
-2,Marlborough,Olivia Ohr,2029.61,70.0,85.0,50.0,87.5
-3,Peninsula,Sterling Utovac,2021.84,100.0,94.12,100.0,87.5
-4,Greenhill,Sarah Koshy,2014.15,90.91,88.89,80.0,66.67
-5,American Heritage Broward,Zayn Charania,1998.96,88.89,93.75,77.78,100.0
-6,Lynbrook,Bolang Zhu,1997.98,90.91,88.89,100.0,75.0
-7,Plano West,Angel Ribo,1997.47,90.91,82.76,85.71,78.57
-8,Coppell,Kaitlyn Tapia,1993.76,76.19,91.3,72.73,90.91
-9,Marlborough,Abby Merges,1979.37,83.33,70.0,85.71,50.0
-10,Lynbrook,Om Modi,1908.59,64.29,88.24,50.0,87.5
-11,Horace Greeley,Salma Gheith,1900.41,77.78,83.33,77.78,66.67
-12,Northland Christian,Liam McDonald,1893.52,78.57,72.73,50.0,66.67
-13,Harrison,Andrew Gaffin,1873.82,81.82,83.33,50.0,77.78
-14,Cary Acad,Patrick Liu,1867.57,66.67,100.0,66.67,100.0
-15,Acton-Boxborough,Neel Kannambadi,1851.45,80.95,66.67,66.67,50.0
-16,Harker,Nikhil Bawa,1845.5,66.67,76.92,66.67,75.0
-17,Greenhill,Aaron Kuang,1843.06,61.11,90.0,66.67,100.0
-18,Ridge,Meera Shah,1842.79,81.82,87.5,80.0,66.67
-19,Harker,Lucas Cao,1836.4,64.71,85.71,60.0,66.67
-20,McNeil,Atharva Srivastava,1826.74,61.54,90.0,50.0,0.0
-21,BASIS Scottsdale,Saish Swamidurai,1824.58,69.23,82.35,50.0,87.5
-22,Mountain Lakes,Ethan Wu,1823.76,72.73,80.0,50.0,83.33
-23,Plano West,Skanda Gopikannan,1810.6,76.47,63.64,50.0,62.5
-24,Little Rock Central,Cameron Simmons,1809.78,60.0,62.5,50.0,0.0
-25,Harvard-Westlake,Lilly Stobo,1792.34,66.67,68.18,33.33,25.0
-26,Harvard-Westlake,Kaison Maruyama,1775.56,73.33,72.22,66.67,50.0
-27,Sharks Independent,William Li,1761.74,64.29,92.86,80.0,80.0
-28,Harker,Sanjith Senthil,1760.18,66.67,72.22,33.33,66.67
-29,BASIS Silicon Valley,Jason Kuo,1753.18,60.87,74.07,40.0,66.67
-30,Millard North,Claire Bloomingdale,1743.93,69.23,75.0,50.0,100.0
-31,Lynbrook,Vikrant Vadathavoor,1735.79,58.33,81.82,33.33,50.0
-32,Riverside Independent,Shiwen Huang,1727.85,54.55,87.5,42.86,0.0
-33,Mountain View,Andrea Wong,1725.61,56.25,83.33,57.14,100.0
-34,Monta Vista,Ethan Yang,1719.42,70.0,78.57,0.0,60.0
-35,Mercer Island,James Young,1717.44,50.0,100.0,0.0,100.0
-36,Greenhill,Dylan Millimet,1716.89,57.14,64.29,40.0,20.0
-37,Waring,Micah Byron-Smarra,1715.1,73.33,62.5,33.33,50.0
-38,Colleyville Heritage,Grady Morris,1713.42,63.16,75.0,42.86,100.0
-39,Memorial,Erin Jia,1713.22,65.0,66.67,50.0,44.44
-40,Clear Lake,Roger Zhen,1709.04,47.06,76.47,0.0,66.67
-41,Barrington,Albert Cai,1708.63,83.33,42.86,,0.0
-42,Syosset,Anabella Pisapia De Marco,1704.98,71.43,80.0,100.0,50.0
-43,Strake Jesuit College Prep,Kevin Song,1704.57,45.45,81.82,50.0,50.0
-44,Cary Acad,Levin Ma,1701.18,50.0,83.33,66.67,66.67
-45,Northwest,Kylin Wu,1695.25,83.33,75.0,,0.0
-46,Greenhill,Michael Ahn,1693.84,76.92,50.0,75.0,33.33
-47,Strake Jesuit College Prep,Michael Meng,1691.48,42.86,71.43,0.0,0.0
-48,Vestavia Hills,Veronica Zhang,1683.57,47.37,83.33,0.0,100.0
-49,Cabot,Kaden Buckner,1680.01,55.56,66.67,,66.67
-50,Wheatley,Ayan Mahajan,1677.78,64.29,72.73,60.0,100.0
-51,Awty International,Darina Rudkovskaia,1666.22,68.42,66.67,50.0,66.67
-52,Marlborough,Lucia Sanchez Gagerman,1664.87,61.54,61.54,0.0,0.0
-53,Village,Selina Zhang,1662.16,62.5,62.5,50.0,50.0
-54,Immaculate Heart,Nicolette Huff,1662.08,70.59,53.33,40.0,66.67
-55,Cary Acad,Riley Powell,1657.25,66.67,58.33,66.67,33.33
-56,Lake Highland Prep,Neel Aparanji,1654.9,72.73,61.54,33.33,75.0
-57,Harvard-Westlake,Michael Reola,1648.84,50.0,88.24,0.0,80.0
-58,Loyola,Thatcher Hartman,1646.44,66.67,60.0,33.33,33.33
-59,American Heritage Broward,Conan Matos,1639.33,55.56,77.78,33.33,66.67
-60,Iowa City West,Faisal Hamzeh,1638.0,62.5,75.0,50.0,50.0
-61,Millburn,Renee Ding,1637.21,75.0,100.0,0.0,
-62,BASIS Silicon Valley,Vihaan Patel,1636.24,45.0,77.78,40.0,66.67
-63,Harker,Sofia Shah,1630.13,20.0,83.33,0.0,66.67
-64,Phillips Exeter Independent,Ezra Segal,1629.4,62.5,75.0,50.0,50.0
-65,Galloway,Charlotte Dinerman,1627.85,50.0,100.0,0.0,100.0
-66,Horace Greeley,Andy Mezgravis-Miani,1619.49,81.82,45.45,100.0,0.0
-67,Flintridge Prep,Isaac Love,1616.62,63.64,66.67,0.0,66.67
-68,Colleyville Heritage,Cameron Buhl,1615.35,44.44,68.75,0.0,0.0
-69,Northern Valley,Aaron Choi,1611.93,47.06,70.0,20.0,62.5
-70,Bronx Science,Lili Sella,1610.04,63.64,75.0,50.0,33.33
-71,Lake Highland Prep,Gabrielle Mckenzie,1605.76,50.0,75.0,0.0,66.67
-72,Lexington,Allison Liu,1605.64,53.85,75.0,50.0,66.67
-73,Chaminade,Owen Sack,1605.44,66.67,80.0,,50.0
-74,Harrison,Adeena Naeem,1603.04,41.67,85.71,,50.0
-75,Cherry Hill HS East,Chloe Ren,1602.81,55.56,76.92,0.0,50.0
-76,Lexington,Omar Obeidat,1602.58,43.75,82.35,25.0,100.0
-77,Independence HS VA Independent,Ridhi Gutta,1598.67,80.0,50.0,50.0,
-78,Greenhill,Eric Xing,1597.42,63.64,37.5,0.0,
-79,Berkeley Carroll,Jaylen Hilario-Peralta,1597.09,70.0,50.0,75.0,
-80,Lynbrook,Shrihan Thangam,1597.03,55.56,72.73,,0.0
-81,American Heritage Broward,Justin Xia,1595.32,64.71,71.43,80.0,50.0
-82,Harrison,Flynn Williams,1592.41,64.29,64.71,50.0,80.0
-83,Sehome,Ruby Simon,1591.0,50.0,88.89,40.0,
-84,Millburn,Leyi Han,1589.06,50.0,83.33,0.0,100.0
-85,Sonoma,Atticus Moss,1588.87,80.0,42.86,,0.0
-86,Greenhill,Vivek Thankavel,1585.49,50.0,40.0,0.0,25.0
-87,BASIS Scottsdale,Taejun Kim,1583.33,62.5,71.43,50.0,0.0
-88,Southlake Carroll,Sreethan Karna,1576.81,37.5,68.75,50.0,0.0
-89,Blue Ivy,Lori Li,1564.25,100.0,50.0,,0.0
-90,Brearley,Izzy Lee,1564.15,70.0,50.0,50.0,
-91,Holy Trinity Episcopal,Chance Hudson,1563.82,53.33,69.23,0.0,100.0
-92,McNeil,Nishan Vense,1559.63,55.56,50.0,,0.0
-93,Harker,Ishaan Dhillon-Patel,1559.39,45.45,66.67,0.0,
-94,American Heritage Broward,Cristina Alvarez,1558.85,62.5,83.33,50.0,
-95,Plano West,Ryan Chang,1558.73,57.14,60.0,0.0,66.67
-96,Papaya Valley,Sreekarthikeya Kankanala,1557.97,53.33,70.59,33.33,80.0
-97,Southlake Carroll,Aarav Bollini,1555.74,53.33,56.25,,0.0
-98,Plano West,Navid Sheybani,1554.77,50.0,61.54,,100.0
-99,Lawrenceville,Michael Meng,1554.6,42.86,85.71,0.0,100.0
-100,Clear Lake,Cathryn Wu,1552.13,38.46,69.23,0.0,0.0
-101,Harvard-Westlake,August Sone,1551.81,50.0,100.0,0.0,100.0
-102,Marlborough,Karenna Mehta,1551.68,66.67,66.67,,
-103,Strake Jesuit College Prep,Lucas Chritah,1543.45,50.0,55.56,0.0,
-104,Gunn HS Independent,Sophia Parang,1540.17,54.55,66.67,50.0,66.67
-105,Durham,Gabriel Whangbo-Olvera,1539.36,80.0,54.55,0.0,0.0
-106,Peninsula,Jack Erikson,1537.85,50.0,85.71,50.0,0.0
-107,Little Rock Central,Gabrielle Torrence,1537.34,25.0,70.0,,0.0
-108,West Des Moines Valley,Landon Stull,1531.63,50.0,75.0,0.0,100.0
-109,Vestavia Hills,Mina Hu,1524.13,60.0,60.0,0.0,0.0
-110,Marlborough,Rory Baskin,1522.77,41.67,71.43,,0.0
-111,Westwood,Diya Venkataragavan,1514.81,40.0,80.0,60.0,
-112,Altamont,Serena Blutter,1514.68,62.5,75.0,50.0,100.0
-113,BASIS Silicon Valley,Yifan Sheng,1514.38,37.5,83.33,0.0,100.0
-114,Strake Jesuit College Prep,Samuel Wawi,1513.15,41.67,61.54,,0.0
-115,Edgemont,Anya Pathak,1511.4,54.55,55.56,0.0,
-116,Immaculate Heart,Emma Sobel,1510.66,55.56,58.82,33.33,50.0
-117,BASIS Scottsdale,Jad Vicente,1509.61,53.85,50.0,0.0,
-118,Harvard-Westlake,Daniel Baek,1506.16,57.14,57.89,33.33,0.0
-119,Isidore Newman,Dylan Carey,1505.78,53.85,50.0,0.0,50.0
-120,Stuyvesant,Kiren Sitwala,1505.1,62.5,55.56,50.0,100.0
-121,Dougherty Valley,Stanley Liu,1504.36,50.0,72.73,33.33,100.0
-122,Harrison,Alicia Zihenni,1503.92,54.55,66.67,50.0,0.0
-123,Strake Jesuit College Prep,Jeffery Wei,1503.23,54.55,50.0,50.0,0.0
-124,Syosset,Josh Kleyner,1502.27,66.67,60.0,,50.0
-125,West HS SLC,Luka Mishchenko,1499.95,100.0,50.0,,0.0
-126,Argument Institute,Noah Arthur,1499.26,75.0,66.67,0.0,
-127,Walt Whitman,Sahaj Chahal,1498.83,50.0,61.11,33.33,33.33
-128,Bronx Science,Kiep Leon,1487.56,71.43,50.0,0.0,
-129,Northwest,Jayden Park,1483.33,50.0,80.0,0.0,100.0
-130,Harker,Rohan Goyal,1480.45,58.33,41.67,,
-131,Lawrenceville,Toby Hou,1479.75,57.14,57.14,0.0,0.0
-132,Horace Greeley,Chris Correia,1474.96,70.0,40.0,100.0,0.0
-133,Gabrielino,Oliver Li,1473.12,57.14,83.33,0.0,
-134,Strake Jesuit College Prep,Matthew Zong,1471.44,28.57,80.0,0.0,
-135,Marlborough,Sophia Moreno,1471.22,50.0,60.0,0.0,100.0
-136,Trojan Independent,Preston Mallett,1467.73,50.0,75.0,0.0,100.0
-137,Lynbrook,Nilesh Mudupalli,1467.56,50.0,57.14,,0.0
-138,Strake Jesuit College Prep,Samuel Rubinstein,1467.36,50.0,57.14,,0.0
-139,Lassiter,Adeleine Choi,1465.07,50.0,71.43,,0.0
-140,Dublin,Aayush Gandhi,1464.64,33.33,66.67,,
-141,Ridge,Himnish Koul,1461.07,71.43,50.0,100.0,0.0
-142,Peninsula,Aiden Kwon,1458.06,66.67,80.0,,100.0
-143,North Allegheny,Sanjeev Arora,1457.78,60.0,66.67,50.0,
-144,American Heritage Broward,Juley Guan,1455.86,55.56,60.0,,0.0
-145,Peninsula,Dalton Ngo,1453.31,44.44,70.0,,0.0
-146,American Heritage Palm Beach,Angelina Isaac,1452.66,66.67,75.0,,0.0
-147,Veritas,Tilak Datta Iyer,1451.56,57.14,71.43,100.0,0.0
-148,Northwood,Jasmine Shao,1451.41,55.56,83.33,33.33,
-149,Awty International,Alexander Zhang,1450.06,60.0,50.0,0.0,100.0
-150,Lake Highland Prep,Suhana Ranawat,1445.19,57.14,50.0,0.0,0.0
-151,Flintridge Prep,Colin Xiang,1445.18,35.0,65.0,50.0,0.0
-152,Iowa City West,Jerry Li,1444.2,50.0,66.67,0.0,
-153,Westwood,Aanya Ujjval,1443.09,37.5,55.56,0.0,33.33
-154,Bronx Science,Gauri Gupta,1442.19,50.0,57.14,,0.0
-155,Memorial,Adrienne Wang,1439.47,54.55,60.0,50.0,0.0
-156,Northern Valley,Hayul (Ellie) Kim,1438.82,77.78,45.45,,0.0
-157,Marlborough,Leah Fischer,1438.71,36.36,61.54,,0.0
-158,Loyola,Matthew Tamayo,1438.34,33.33,66.67,,
-159,Winchester,Ella Layton,1437.01,66.67,66.67,,
-160,Archbishop Mitty,Dhruv Mallick,1436.51,50.0,66.67,0.0,
-161,St Thomas,Craig O'Sullivan,1432.72,38.89,73.33,0.0,
-162,Bronx Science,Cooper Halpern,1429.12,100.0,40.0,,50.0
-163,Lexington,Vasily Morozov,1427.89,100.0,25.0,,0.0
-164,American Heritage Broward,Emanuel Sasson,1424.32,62.5,50.0,,0.0
-165,ADL,Victor Kang,1422.4,50.0,60.0,0.0,
-166,Strake Jesuit College Prep,Bode Bosell,1422.28,44.44,55.56,,
-167,Concord Carlisle,Noah Arthur,1421.73,66.67,50.0,,0.0
-168,St Luke's,Maeve Welch,1419.02,62.5,50.0,50.0,
-169,Lake Highland Prep,Adam Wayne,1418.45,55.56,55.56,,
-170,Harker,Tara Prem,1417.52,33.33,70.0,,0.0
-171,Brophy,Vincent Wang,1416.39,44.44,63.64,,50.0
-172,Ridge,Sameer Kandra,1414.85,71.43,42.86,0.0,0.0
-173,Immaculate Heart,Olivia Amir,1413.18,41.18,53.33,0.0,100.0
-174,Notre Dame San Jose,Yulong Gong,1411.82,80.0,33.33,50.0,
-175,Marlborough,Sami Shapiro,1411.04,50.0,66.67,50.0,
-176,Loyola,Tomas Gonzalez,1409.35,75.0,50.0,50.0,
-177,Dublin HS Independent,Aayush Gandhi,1407.6,100.0,50.0,,0.0
-178,Valley Christian,Vanessa Xu,1403.06,50.0,57.14,,0.0
-179,Marlborough,Chloe Swidler,1402.43,38.46,61.54,0.0,0.0
-180,PV Independent,Carter Nelson,1400.51,33.33,80.0,,50.0
-181,Cape Fear,Maura Stickle,1392.85,50.0,66.67,,
-182,Immaculate Heart,Audrey Eckert,1391.96,53.33,50.0,,0.0
-183,Memorial,Claire Sun,1382.66,43.75,60.0,0.0,100.0
-184,Loyola,Ethan Dumper,1382.58,46.15,58.33,0.0,
-185,City Honors,Jacob Brace,1382.55,33.33,71.43,,0.0
-186,Bronx Science,Sarita Satynarayana,1380.29,45.45,66.67,0.0,
-187,Greenhill,Owen Gao,1374.71,50.0,50.0,0.0,
-188,Harvard-Westlake,Elijah Yguado,1374.19,38.46,63.64,0.0,
-189,Strake Jesuit College Prep,Christopher Cheng,1372.26,50.0,57.14,,0.0
-190,Lakeville South,Ezana Haile,1371.66,50.0,66.67,0.0,
-191,Berkeley Independent,David Gussmann,1371.23,33.33,70.0,0.0,0.0
-192,Flintridge Prep,Bella Ma,1370.25,33.33,70.0,0.0,0.0
-193,Marlborough,Daena Kim,1370.16,22.22,66.67,,
-194,Harrison,Kevin Iwanski,1367.48,22.22,66.67,,
-195,Harker,Anirudh Subramanian,1365.32,50.0,50.0,,
-196,Greenhill,Ali Naseem,1365.23,11.11,77.78,,
-197,Interlake,Jayden Park,1363.76,25.0,100.0,0.0,
-198,Ardsley,Naumika Naresh,1363.38,44.44,55.56,,0.0
-199,Southlake Carroll,Ibraheem Mushtaq,1363.32,22.22,77.78,,
-200,Westwood,Ayushi Thakur,1362.12,53.85,46.15,0.0,100.0
-201,Harvard-Westlake,Jacob Waxman,1362.08,66.67,33.33,,
-202,Lake Highland Prep,Christina Brown,1361.55,66.67,40.0,0.0,0.0
-203,American Heritage Palm Beach,Nico Ignatowich,1359.09,50.0,42.86,0.0,0.0
-204,Marlborough,Alisha Kim,1357.91,33.33,44.44,,
-205,Ridge,Aditya Bajaj,1356.11,66.67,33.33,,
-206,Syosset,Abigail Ho,1353.11,28.57,83.33,0.0,
-207,Meadows,Teighlor Bloyd,1350.28,41.67,50.0,,
-208,Memorial,Brendan Liu,1349.73,33.33,66.67,,0.0
-209,Harvard-Westlake,Julia Thomas,1348.88,55.56,50.0,,33.33
-210,Christopher Columbus,Taro Porschke,1345.51,20.0,66.67,0.0,33.33
-211,Ridge,Amandeep Manda,1343.21,42.86,66.67,0.0,
-212,Lexington,Noah Perry,1342.99,50.0,50.0,,
-213,Holy Trinity Episcopal,Austen Richardson,1342.51,50.0,42.86,0.0,
-214,Harvard-Westlake,Sage Bonotto,1341.53,83.33,16.67,,
-215,Avon,Santiago Jimenez,1336.72,55.56,40.0,,0.0
-216,Stuyvesant,Alexis Qian,1334.47,16.67,83.33,,
-217,Westwood,Saanvi Mittal,1332.35,40.0,40.0,,
-218,Mountain Brook,Winston Rocque,1332.09,66.67,42.86,,0.0
-219,Harker,Ryan Lin,1331.65,50.0,75.0,0.0,100.0
-220,Strake Jesuit College Prep,Soluchi Aneji,1331.45,33.33,66.67,,
-221,Strake Jesuit College Prep,Ayaan Yakoob,1330.32,66.67,33.33,,
-222,Woodlands Independent,Michelle Lee,1328.92,66.67,50.0,,0.0
-223,Polytechnic,Kara Kang,1326.2,75.0,33.33,0.0,
-224,Brophy,Mason Cavallo,1325.37,50.0,55.56,0.0,
-225,Robinson,Alina Diaz,1323.2,62.5,33.33,50.0,
-226,Phillips Exeter Independent,James Moon,1322.57,71.43,42.86,100.0,0.0
-227,Altamont,William McLain,1318.9,62.5,33.33,0.0,33.33
-228,Stuyvesant,Emma Lin,1316.97,50.0,50.0,,
-229,Lexington,Kevin Zhang,1316.29,16.67,83.33,,
-230,Argument Institute,Advika Prakash,1315.16,66.67,50.0,0.0,100.0
-231,Syosset,Saisha Puri,1314.05,33.33,66.67,,
-232,Loyola,Upton Ta-Beadle,1313.32,33.33,66.67,0.0,
-233,Lynbrook,Angeline Su,1311.62,50.0,50.0,0.0,
-234,Pine View,Paul Buermann,1311.27,28.57,66.67,50.0,
-235,Summit,Madeline Schleifman,1310.28,0.0,100.0,,
-236,Isidore Newman,Russell Huber,1310.15,66.67,16.67,,
-237,Monta Vista,Steven Chi,1309.55,28.57,69.23,0.0,100.0
-238,Lake Highland Prep,Aayan Malik,1301.56,33.33,66.67,,
-239,American Heritage Broward,Cassandra Beane,1300.41,50.0,50.0,,
-240,ModernBrain,Jason Rong,1299.35,33.33,75.0,,0.0
-241,Albuquerque,Eesha Gunukula,1297.99,20.0,83.33,,
-242,Trinity Prep,Graham Paul,1293.21,33.33,66.67,,
-243,Kim Insititute,Jonah Kim,1292.91,83.33,33.33,0.0,
-244,Montville,Ansh Shamdasani,1290.23,33.33,66.67,,
-245,Harrison,Atharv Gandhi,1288.17,22.22,77.78,,
-246,Sharks Independent,Justin Ding,1283.97,33.33,75.0,,0.0
-247,Laurel,Claire Witalec,1282.56,100.0,25.0,,0.0
-248,Lake Highland Prep,Aubrey Coleman,1282.4,40.0,50.0,,
-249,Kinkaid,Chris Mo,1282.23,50.0,50.0,,
-250,American Heritage Broward,Shyam Muhunthan,1280.9,50.0,33.33,0.0,
-251,PSS Independent,Pranav Narra,1278.95,11.11,80.0,,0.0
-252,Harker,Liam Lee,1277.96,50.0,50.0,,
-253,Lake Highland Prep,Jacob Quililan,1275.53,55.56,22.22,,
-254,Strake Jesuit College Prep,Meddy Ma,1274.99,33.33,50.0,,
-255,Marlborough,Sarah Meisel,1273.93,44.44,40.0,,0.0
-256,King,Daniel Park,1273.93,75.0,33.33,0.0,
-257,Arizona College Prep,Saraphina Zhao,1273.25,50.0,66.67,0.0,
-258,Pine View,Bowie Lee,1272.49,50.0,50.0,,50.0
-259,Millburn,Saumya Katariya,1272.47,28.57,66.67,0.0,
-260,Germantown,Chloe Zhou,1271.98,33.33,66.67,,
-261,McNeil,Joseph Lijoy,1267.29,66.67,16.67,,
-262,Scarsdale,Vick Tan,1266.67,50.0,66.67,0.0,
-263,Pennsbury,Avigail Wus,1265.38,33.33,50.0,0.0,
-264,Banana,Winston Chou,1264.85,66.67,33.33,,
-265,Harvard-Westlake,Esther Goldman,1264.03,66.67,50.0,,
-266,Ethel Walker Independent,Payton Pan,1263.56,66.67,40.0,,
-267,West Des Moines Valley,Reighlee Sowden,1261.89,33.33,66.67,,
-268,CR North,Joyce Xiao,1260.54,50.0,66.67,0.0,
-269,Stuyvesant,Chloe Wang,1259.21,33.33,50.0,,
-270,Loyola,Michael Romero,1254.22,75.0,33.33,0.0,
-271,Isidore Newman,Wyatt Conner,1252.93,57.14,50.0,0.0,
-272,Dougherty Valley,Siddharth Vedam,1250.68,50.0,50.0,,
-273,Stuyvesant,Ellie Mak,1249.75,50.0,33.33,,
-274,Lake Highland Prep,Chupeng Gui,1249.35,44.44,37.5,,
-275,Harker,Arush Savla,1243.86,50.0,33.33,,
-276,BASIS Peoria Independent,Elizabeth Chong,1241.4,66.67,33.33,,
-277,McDowell,Gridley Wright,1240.78,50.0,50.0,,
-278,Hunter,Gabe Koh,1239.14,44.44,37.5,,
-279,Marlborough,Penny Stoller,1238.01,66.67,33.33,,
-280,Able2Shine,Mason Sterling,1237.06,55.56,33.33,,
-281,Shrewsbury,Helen Zuo,1234.98,33.33,66.67,,
-282,Madison Central,Aalekh Arapalli,1233.8,25.0,100.0,0.0,
-283,Isidore Newman,Gaura Bansal,1229.94,33.33,66.67,,
-284,Marlborough,Francesca Moreno,1229.82,50.0,25.0,,
-285,Harrison,Jordan Blake,1227.4,40.0,66.67,,
-286,PSS Independent,Stanley Liu,1223.21,100.0,0.0,,
-287,Memorial,Ethan Wu,1222.06,0.0,100.0,,
-288,Cypress Bay,Sage Stanley,1220.62,33.33,66.67,,
-289,Hunter,Sebastian Engle,1220.23,41.67,33.33,,
-290,Cupertino HS Independent,Ayeshwarya Sisodia,1217.67,50.0,30.0,,
-291,Dublin High Independent,Samarth Gaggar,1215.78,33.33,66.67,,
-292,Newark Science,Zoe Corporan-Pinto,1215.67,33.33,50.0,,
-293,BASIS Scottsdale,Andrew Kommu,1214.36,16.67,66.67,,
-294,Bellevue Youth,Nathan Wu,1210.53,33.33,66.67,,
-295,Amador Valley Independent,Lavi Avigad,1208.5,66.67,33.33,,
-296,Pittsburgh Central Catholic,Benjamin Hunt,1207.51,66.67,33.33,,
-297,Isidore Newman,Sam Elichman,1206.43,22.22,55.56,,
-298,Immaculate Heart,Carson Mueller,1205.85,61.54,25.0,0.0,
-299,Harker,Jackson Yue,1204.54,42.86,33.33,0.0,
-300,Altamont,Max Feinstein,1204.5,40.0,50.0,,
-301,Winston Churchill,Teague Cantey,1203.37,33.33,40.0,,
-302,Altamont,Manasvini Chava,1202.65,50.0,20.0,0.0,
-303,Hawken,Zoey Dudley,1202.56,33.33,66.67,,
-304,Trinity Prep,Chloe Kang,1201.55,16.67,83.33,,
-305,Hamilton,Charles Wang,1199.47,33.33,66.67,,
-306,American Heritage Broward,Diane Allain-Tereshchenko,1198.35,33.33,66.67,,
-307,Westridge,Eliza Kim,1198.27,0.0,100.0,,
-308,American Heritage Broward,Melody Cheng,1198.26,33.33,50.0,,
-309,Mountain View,Christopher Shin,1194.57,33.33,40.0,,
-310,Equality Independent,Winston Chou,1194.28,33.33,66.67,,
-311,Los Altos,Neil Marwah,1194.26,50.0,33.33,,
-312,ModernBrain,Stella Pellier,1193.56,33.33,66.67,,
-313,ModernBrain,Gloria He,1192.16,33.33,66.67,,
-314,Leland,Shivansh Sathya,1190.91,66.67,33.33,,
-315,Hunter,Aditya Carter,1190.15,44.44,44.44,,
-316,Lexington,Changze Song,1189.67,50.0,33.33,,
-317,Cupertino Independent,Aarini Chadha,1188.75,50.0,33.33,,
-318,Robinson,Ketan Nallamshetty,1188.5,33.33,44.44,,
-319,St Luke's,Salman Memon,1185.99,50.0,50.0,,
-320,Montgomery Blair,Olivia Ren,1184.2,33.33,66.67,,
-321,Strath Haven,Noel Springer,1183.91,33.33,66.67,,
-322,Arizona College Prep,Thanvi Voruganti,1182.38,66.67,33.33,,
-323,Mission San Jose,Matthew Wang,1182.15,33.33,66.67,,
-324,Wilcox,Saharsh Madullapalli,1179.03,33.33,66.67,,
-325,Marlborough,Audrey Lohara,1178.35,0.0,66.67,,
-326,PSS Independent,Siddharth Vedam,1177.09,0.0,100.0,,
-327,Mercer Island Independent,James Young,1177.0,66.67,33.33,,
-328,Little Rock Central,Yuhan Hu,1176.45,11.11,66.67,,
-329,Lexington,Nicolas Griego,1175.54,33.33,66.67,,
-330,Westwood,Aashriya Vasamsetti,1174.14,25.0,33.33,,
-331,Edgemont,Arjun Gupta,1171.94,50.0,33.33,,
-332,Loyola,Rishad Vaghaiwalla,1171.49,33.33,66.67,,
-333,Westwood,Aarya Patel,1171.05,25.0,50.0,,
-334,Chapin,Mira Kanodia,1170.65,33.33,66.67,,
-335,Trinity Prep,Sami Haddadin,1169.85,33.33,50.0,,
-336,Lovett,Evan Lee,1168.87,50.0,33.33,,
-337,Northwood,Natalie Chen,1168.57,50.0,33.33,,
-338,Trinity Christian,Evelyn Turner,1168.02,33.33,66.67,,
-339,Dougherty Valley,Vivaan Rawal,1166.53,33.33,50.0,,
-340,Harker,Jonathan Sun,1165.91,66.67,0.0,,
-341,Robinson,Beckett Vidrine,1165.2,33.33,55.56,,
-342,New Orleans Charter Science And Math,Jaden Williams,1164.71,0.0,100.0,,
-343,Amador Valley,Lavi Avigad,1161.94,66.67,33.33,,
-344,St Francis,Joselyn Coon,1160.53,37.5,44.44,,
-345,Dougherty Valley,Michelle Pan,1158.04,33.33,50.0,,
-346,Mountain Brook,Madelyn Hyde,1156.81,33.33,50.0,,
-347,Harker,Luke Xing,1156.01,0.0,66.67,,
-348,Brentwood,Ruby Albert,1155.75,33.33,66.67,,
-349,Dulles,Claire Zhou,1152.58,0.0,100.0,,
-350,Bellevue Youth,Zoe Fulay,1152.41,33.33,66.67,,
-351,Stuyvesant,Emily Johnson,1152.16,33.33,66.67,,
-352,St Francis,Wiley Wang,1152.02,44.44,33.33,,
-353,Sage Hill,Amy Jia,1151.57,33.33,66.67,,
-354,Bentonville,Henry Akins,1150.05,33.33,66.67,,
-355,Gabrielino,Linus Mak,1148.9,100.0,0.0,,
-356,Edina,Graham Kesterson,1148.68,0.0,66.67,,
-357,Loyola,Cooper Kun,1147.57,66.67,33.33,,
-358,Sage Hill,Leo Zhang,1145.63,66.67,33.33,,
-359,Walpole,Ramu Muthukaruppan,1145.26,33.33,66.67,,
-360,Isidore Newman,Jackson Dirks,1144.9,33.33,66.67,,
-361,Fort Walton Beach,Alec Ward,1144.81,30.0,44.44,0.0,
-362,King,Derek Shah,1140.1,33.33,66.67,,
-363,Northview,Justin Zou,1140.04,33.33,66.67,,
-364,Loyola,Kyle Oh,1139.41,66.67,33.33,,
-365,Dreyfoos Arts,Elliott Wildman,1139.26,66.67,33.33,,
-366,Carrollwood Day,Gabriel Lopez,1138.46,0.0,100.0,,
-367,Lake Highland Prep,Shiva Sambandam,1137.38,33.33,41.67,,
-368,Lake Highland Prep,Sanjana Mannepalli,1133.16,100.0,0.0,,
-369,Lake Highland Prep,Emma Tan,1128.38,33.33,66.67,,
-370,Edgemont,Vivaan Shahani,1128.15,33.33,44.44,,
-371,Pinewood,Claire Au,1126.93,26.67,50.0,,
-372,Stuyvesant,Galvin Chen,1125.68,33.33,33.33,,
-373,Elkins,Sid Sharma,1123.29,33.33,36.36,,
-374,Harvard-Westlake,Owen Fua,1122.88,66.67,0.0,,
-375,Acclive,Pearl Yu,1120.35,100.0,0.0,,
-376,Awty International,Richard Yi,1119.42,66.67,33.33,,
-377,Pinewood,Tiffany Au,1116.21,44.44,33.33,,
-378,Portola,Jayden Lee,1114.97,0.0,66.67,,
-379,Collegiate,Ranbeer Arora,1114.8,40.0,33.33,,
-380,Greenhill,Trent Hedrick,1111.73,33.33,66.67,,
-381,West Des Moines Valley,Dannick Nzimi,1110.92,50.0,33.33,,
-382,American Heritage Broward,Joel Cardenas,1108.83,66.67,33.33,,
-383,Cypress Ranch,Sharvay Srivastava,1108.78,50.0,20.0,,
-384,Bellaire,Apollo Stephens,1106.92,66.67,33.33,,
-385,Emerald,Surya Nookala,1105.08,33.33,33.33,,
-386,Dougherty Valley,Devansh Karavati,1104.97,50.0,33.33,,
-387,Marquette,Grant Young,1101.82,37.5,25.0,,
-388,Pingry,Sophie Hao,1097.99,33.33,66.67,,
-389,Clark Advanced Learning Center,Samuel McGee,1097.76,66.67,33.33,,
-390,Albuquerque,Athena Hanna,1096.07,100.0,0.0,,
-391,Arizona Chandler Independent,Thanvi Voruganti,1092.6,33.33,66.67,,
-392,Marlborough,Jessica Guo,1091.51,33.33,66.67,,
-393,School For Advanced Studies-wolfson,Daniel Llobet,1089.87,66.67,33.33,,
-394,Bronx Science,Alexandra Ghile,1087.68,33.33,66.67,,
-395,Bellevue Youth,Aryan Rao John,1087.54,33.33,33.33,,
-396,Brooklyn Technical,Nathaniel Georges,1087.04,33.33,33.33,,
-397,Geffen Academy of UCLA,Josephine Park,1086.41,40.0,40.0,,
-398,Immaculate Heart,Camille Johns,1085.25,33.33,33.33,,
-399,Flintridge Prep,Olivia Lu,1085.21,11.11,55.56,,
-400,Summit,Ruby Aldape,1084.57,66.67,0.0,,
-401,Brearley,Irene Moon,1082.16,16.67,66.67,,
-402,Jordan,Annie Tan,1081.87,33.33,33.33,,
-403,Marlborough,Elili Flore,1080.64,33.33,66.67,,
-404,Marlborough,Joy Wei,1080.24,50.0,20.0,,
-405,Dallas Highland Park,Amelia Ghosh,1080.0,33.33,66.67,,
-406,Milpitas,Diya Yadav,1079.81,50.0,16.67,,
-407,Brophy,Yiyi Sun,1078.57,33.33,33.33,,
-408,Jasper,Jay Lee,1078.19,33.33,66.67,,
-409,Hawken,Ben Miyares,1077.69,33.33,66.67,,
-410,Horace Greeley,Saket Reddyjarugu,1076.05,66.67,33.33,,
-411,Coppell,Srihan Yerram,1073.24,33.33,16.67,,
-412,Brophy,Kellan Lynn,1070.78,33.33,33.33,,
-413,Archbishop Mitty,Aadhya Mamillapalli,1070.3,33.33,33.33,,
-414,Bellevue Youth,Mark Yu,1070.16,0.0,66.67,,
-415,Heights,Sarah Cruser,1069.81,66.67,0.0,,
-416,Harrison,Paige Bianchini,1069.08,44.44,25.0,,
-417,Stuyvesant,Mufei Yu,1068.86,33.33,33.33,,
-418,Westlake,Janelle Lee,1063.54,33.33,33.33,,
-419,Fort Walton Beach,Cole Rewis,1062.48,33.33,33.33,,
-420,Sage Hill,Isabella Huang,1061.72,33.33,33.33,,
-421,Marquette,Isaac Neumann,1059.15,50.0,33.33,,
-422,Trinity Prep,Maren Marshall,1057.25,16.67,50.0,,
-423,Westwood,Tiffany Gao,1056.35,22.22,44.44,,
-424,Marlborough,Sophie Weiss,1055.65,16.67,50.0,,
-425,Mont. Acad,Duncan McInnes,1055.13,0.0,66.67,,
-426,Bellaire,Ethan Reichek,1054.68,50.0,33.33,,
-427,Brooklyn Technical,Nozanin Mardoni,1054.29,33.33,33.33,,
-428,Carrollwood Day,Bryce Nolt,1054.2,33.33,33.33,,
-429,Harvard-Westlake,Feliciano Serrano,1052.78,40.0,33.33,,
-430,Bellaire,Aashrith Korampally,1051.34,0.0,66.67,,
-431,Dougherty Valley,NagaVikhyath Malineni,1050.39,33.33,33.33,,
-432,Wayzata,Neel Shrivastava,1047.59,0.0,66.67,,
-433,Unionville,Nathaniel Gushurst,1045.41,33.33,33.33,,
-434,Northland Christian,Langston Holiday,1044.96,20.0,16.67,,
-435,Westwood,Rithwik Nair,1043.75,0.0,66.67,,
-436,Ridge,Mandar Udeshi,1042.89,0.0,66.67,,
-437,Westlake,Priya Shah,1042.16,33.33,33.33,,
-438,West Des Moines Valley,Abigail Miller,1040.77,33.33,33.33,,
-439,Veritas,Jacob Brace,1039.15,33.33,33.33,,
-440,Dripping Springs,Abir Kulkarni,1035.44,66.67,0.0,,
-441,Danville Area,David Nemoianu,1034.1,0.0,66.67,,
-442,Lindale,Carlos Martinez,1033.76,33.33,33.33,,
-443,McDowell,Julia Rastatter,1032.87,33.33,66.67,,
-444,Peninsula,Kelly Han,1031.52,33.33,33.33,,
-445,Loyola,Agustya Karadkar,1030.0,33.33,33.33,,
-446,Dowling Catholic,Jackson Smith,1029.4,50.0,50.0,,
-447,Harker,Guhan Nagarajan,1028.79,33.33,33.33,,
-448,Syosset,Jeffrey Tvedt,1026.3,66.67,0.0,,
-449,Loyola,Edward Min,1025.91,33.33,66.67,,
-450,Princeton Day,Maximus Wang,1025.45,66.67,0.0,,
-451,Lexington,Rohan Boonapalli,1024.67,66.67,0.0,,
-452,Able2Shine,Michelle Zhang,1024.5,33.33,33.33,,
-453,ADL,Angie Chao,1024.11,66.67,0.0,,
-454,American Heritage Broward,Nelson Shi,1023.45,33.33,33.33,,
-455,Riverside Independent,Princeton Kang,1021.95,22.22,37.5,,
-456,Isidore Newman,Miles Bordelon,1020.67,25.0,33.33,,
-457,BASIS Chandler,Wareesha Islam,1020.57,33.33,33.33,,
-458,Immaculate Heart,Madeleine De Leon-Wagner,1017.66,33.33,20.0,,
-459,Harvard-Westlake,Trevor Kim,1016.88,66.67,0.0,,
-460,Peninsula,Jiayu Tang,1015.52,37.5,22.22,,
-461,School Without Walls,Margalit Schonebaum,1015.09,33.33,33.33,,
-462,Lassiter,Leo Yadav,1014.73,33.33,33.33,,
-463,Arizona Chandler Independent,Saraphina Zhao,1011.6,0.0,66.67,,
-464,Edina,Zitian Chen,1009.62,0.0,66.67,,
-465,LAMP,Jongwoo Lee,1008.82,33.33,50.0,,
-466,Foothill Independent,Anirudh Vellala,1006.37,33.33,33.33,,
-467,Mission San Jose,Erin Johnson,1001.35,33.33,50.0,,
-468,Pine View,Charlotte White,999.31,33.33,33.33,,
-469,Flower Mound,Kaviya Vinothkumar,998.18,33.33,33.33,,
-470,Hunter Independent,Gabriel Koh,997.79,33.33,33.33,,
-471,Lake Mary,Eleni Patounakis,995.74,33.33,33.33,,
-472,Dougherty Valley,Manya Vattikuti,993.14,50.0,16.67,,
-473,Unionville,Andrew Fan,992.85,0.0,66.67,,
-474,Lake Highland Prep,Amitav Dalal,992.57,50.0,16.67,,
-475,Northwest,Krishiv Goswami,991.79,33.33,33.33,,
-476,Westridge,Katherine Duan,990.9,66.67,0.0,,
-477,Golden State,Siddharth Lagisetty,990.46,66.67,0.0,,
-478,Boston Latin,Savan Boxer,988.89,33.33,66.67,,
-479,Durham,Shreya Joseph,986.59,50.0,33.33,,
-480,Monta Vista,Harly Liu,986.35,33.33,40.0,,
-481,Memorial,Anna Dong,986.28,33.33,33.33,,
-482,Palo Alto,Darwin Collins,986.27,66.67,0.0,,
-483,Albuquerque,Lillie Grace Rosen,983.9,33.33,33.33,,
-484,Edgemont,Samrajya Singh,981.56,0.0,66.67,,
-485,Little Rock Central,Shimaz Hoque,981.42,0.0,33.33,,
-486,Riverside Independent,Oliver Tan,979.71,33.33,22.22,,
-487,Bronx Science,Kadiatou Sanoh,979.63,0.0,66.67,,
-488,Stuyvesant,Ethan Chen,979.59,16.67,33.33,,
-489,Ridge,Aakash Mehta,979.1,33.33,33.33,,
-490,Chapin,Arin Lee,977.32,0.0,66.67,,
-491,Westwood,Dvaith Raghavan,976.37,33.33,20.0,,
-492,Flower Mound,Krish Kulkarni,975.43,0.0,66.67,,
-493,North Hollywood,Guthrie Luke,974.76,0.0,66.67,,
-494,San Marino,Reece Liu,974.44,33.33,33.33,,
-495,Ronald Reagan,Sricharvi Rayala,974.1,0.0,33.33,,
-496,Iowa City West,Vivaan Dudeja,972.34,0.0,66.67,,
-497,Marlborough,Clara Merchan,970.33,33.33,33.33,,
-498,Westridge,Yuna Wu,968.26,40.0,20.0,,
-499,Harker,Stephen Gao,967.83,16.67,33.33,,
-500,St Mary's Dominican,Shanlee Raimer,966.87,66.67,0.0,,
-501,North Hollywood,Henry Beveridge,965.75,0.0,66.67,,
-502,North Dallas,Sarai Jones,959.5,33.33,0.0,,
-503,Bellaire,Kalyani Gifford,959.17,0.0,66.67,,
-504,Newark Science,Kevin Ramos,957.13,0.0,33.33,,
-505,Park City,Mia Sawyer,954.07,0.0,33.33,,
-506,West Des Moines Valley,Lorelei Wemmie,953.45,33.33,33.33,,
-507,Theodore Roosevelt,Isabelle Raymer,951.03,33.33,33.33,,
-508,McNeil,Anshul Pancholi,950.66,16.67,33.33,,
-509,Golden State,Chris Wang,949.7,0.0,66.67,,
-510,West Des Moines Valley,Judah Carpenter,949.32,33.33,16.67,,
-511,Frazer,Jaganesh Ramkrishnan,947.37,66.67,0.0,,
-512,Myers Park,Cynwonthia Poon,947.28,33.33,33.33,,
-513,Memorial,Angela Lu,945.5,66.67,0.0,,
-514,Wayzata,Kieran Finnegan,945.26,33.33,33.33,,
-515,Dripping Springs,Amani Ahmed,944.41,0.0,33.33,,
-516,University,Alex Huang,943.5,0.0,33.33,,
-517,Edgemont,Anika Shah,940.17,0.0,50.0,,
-518,Cupertino Independent,Andrew Kim,938.29,33.33,33.33,,
-519,Winchester,Alan Wang,936.14,33.33,33.33,,
-520,Harker,Jessie Cao,934.37,33.33,33.33,,
-521,Tampa-Jesuit,Garrett Smith,932.09,20.0,33.33,,
-522,Frazer,Leo Dudas,926.79,33.33,33.33,,
-523,Loyola,Joseph Palacios,925.48,33.33,33.33,,
-524,San Marino,Kiefer Phan,924.01,33.33,33.33,,
-525,Walpole,Shaurya Panchal,923.12,66.67,0.0,,
-526,Loyola,Nolan Freyer,920.49,33.33,33.33,,
-527,La Salle,Aiden Randolph,919.59,0.0,66.67,,
-528,Gulf Breeze,Owen Giberman,919.47,16.67,33.33,,
-529,Greenhill,Ansh Gandhi,919.14,33.33,0.0,,
-530,Clark Advanced Learning Center,Michael Guffin,918.9,16.67,20.0,,
-531,Altamont,Arissa Khan,918.7,50.0,0.0,,
-532,Peninsula,Khushee Totla,918.06,33.33,16.67,,
-533,Harker,Alvin Siamwalla,917.47,0.0,33.33,,
-534,Blue Ivy,Sanya Tarique,914.7,66.67,0.0,,
-535,West Des Moines Valley,Seth Smith,914.68,33.33,33.33,,
-536,Westwood,Atharv Sondhi,905.37,0.0,33.33,,
-537,Fordham Prep,Owen Black,904.4,0.0,33.33,,
-538,Winston Churchill,Moses Hollander,903.73,33.33,0.0,,
-539,ModernBrain,Benjamin Haselhuhn,903.31,0.0,50.0,,
-540,Irma Rangel YWLS,Isabel Contreras,899.77,0.0,33.33,,
-541,New Orleans Charter Science And Math,Lawrson Dillon,896.1,33.33,33.33,,
-542,Brooklyn Technical,Andrii Gubenko,894.46,0.0,33.33,,
-543,Lake Mary,Jessica Adeosun,890.28,33.33,33.33,,
-544,Peninsula,Matthew Song,886.01,50.0,0.0,,
-545,Edina,Evelyn Ge,884.35,0.0,33.33,,
-546,Immaculate Heart,Franci D'Adamo Satta,883.96,33.33,0.0,,
-547,Harker,Krish Arora,881.7,33.33,0.0,,
-548,Immaculate Heart,Olive Gruber,881.46,33.33,0.0,,
-549,Hill,James Gong,880.01,0.0,33.33,,
-550,Coppell,Zohayr Mir,879.2,22.22,11.11,,
-551,Lake Highland Prep,Maria Annie Domingues,878.7,33.33,33.33,,
-552,Bronx Science,Zuri Yaw Costello,878.51,0.0,33.33,,
-553,Altamont,Jaishnav Gutti,878.2,0.0,66.67,,
-554,Isidore Newman,Beauregard Dirks,877.88,50.0,0.0,,
-555,West Des Moines Valley,Linni Vo,877.06,33.33,0.0,,
-556,Chapin,Amelia Fox,875.9,33.33,0.0,,
-557,Collegiate,Oliver Shen,874.65,0.0,33.33,,
-558,Trivium,Charlotte Muegge,873.98,33.33,0.0,,
-559,Mountain Brook,Sam Williams,873.91,33.33,16.67,,
-560,Independent-Vanya Dudeja,Vanya Dudeja,868.42,50.0,33.33,,
-561,Peninsula,Ayan Uppal,867.99,0.0,50.0,,
-562,Lake Mary,Hayden Branch,857.37,0.0,66.67,,
-563,Lynbrook,Skanda Vasishta,855.76,16.67,16.67,,
-564,Carrollwood Day,Shania Bokhari,854.08,66.67,0.0,,
-565,Youth Development Resource Center,Jingcheng Wang,849.21,33.33,0.0,,
-566,Dougherty Valley,Hayagriv Sriram,849.01,0.0,33.33,,
-567,Harker,Aman Ahmed,844.64,0.0,50.0,,
-568,Strake Jesuit College Prep,Eric Xiong,843.93,0.0,33.33,,
-569,Colorado Academy Independent,Hendrik Jordaan,843.76,33.33,33.33,,
-570,Winston Churchill Independent,Olivia Ren,843.1,0.0,50.0,,
-571,Hamilton,Aadyant Rajan,835.34,0.0,33.33,,
-572,McDowell,Tejas Kanhere,834.68,33.33,0.0,,
-573,Eastside,Naaday Ali Shah,832.16,33.33,16.67,,
-574,Evergreen Valley,Adit Agarwal,829.05,0.0,33.33,,
-575,Altamont,Jagguth Gutti,828.98,16.67,33.33,,
-576,Harker,Benjamin Fu,824.32,50.0,0.0,,
-577,Colleyville Heritage,Srikari Kolli,823.26,0.0,33.33,,
-578,Harrison,Jonida Ismajlukaj,820.25,20.0,16.67,,
-579,Gulf Breeze,Anthony Ren,820.14,0.0,33.33,,
-580,Newark Tech,Ifedamola Salawu,819.47,0.0,33.33,,
-581,Hamilton,Audrey Voss,816.31,0.0,33.33,,
-582,Spring Branch Academic Institute,Anika Roy,815.71,0.0,33.33,,
-583,New Orleans Charter Science And Math,Derrick Norris,815.5,33.33,0.0,,
-584,Lexington,VIvian Zheng,813.28,0.0,33.33,,
-585,Strake Jesuit College Prep,Nathan Fan,809.29,0.0,16.67,,
-586,Peninsula,Eytan Ek,809.2,0.0,33.33,,
-587,Lexington,Lisa Amanna,807.55,0.0,33.33,,
-588,Notre Dame San Jose,Tara Balaji,803.54,16.67,16.67,,
-589,Marlborough,Ella Pishva,800.0,,,,
-590,Marlborough,Julia Kang,800.0,,,,
-591,West Des Moines Valley,Jesse Hayes,799.3,0.0,0.0,,
-592,Northwood,Mia Velazquez,797.66,50.0,0.0,,
-593,Altamont,Jackson Shah,795.48,0.0,33.33,,
-594,Collegiate,Maurya Srivastava,795.19,0.0,0.0,,
-595,Brophy,Aaditya Shah,794.3,16.67,20.0,,
-596,Plano Senior,Jairkishna Annapareddy,794.22,0.0,33.33,,
-597,Marlborough,Sarah Kim,791.74,0.0,33.33,,
-598,Bellevue Youth,Armaan Motwani,790.54,0.0,33.33,,
-599,"Hillcrest HS - Dallas, TX",Ragia Brown,789.2,0.0,33.33,,
-600,Golden State,Jayveer Mehta,786.29,33.33,0.0,,
-601,Hill,Sonali Sahai,785.59,33.33,0.0,,
-602,Francis Parker,Lucas Chen,784.55,0.0,33.33,,
-603,Mission San Jose,Anirudh Balaji,781.25,33.33,0.0,,
-604,West Boca Raton,Drake Schluth,779.24,0.0,33.33,,
-605,Peninsula,Evan Chang,776.94,50.0,0.0,,
-606,Jordan,Adam Salama,776.46,0.0,0.0,,
-607,Golden State,Kavish Singh,770.66,0.0,0.0,,
-608,Independent,Oliver Wong,768.92,0.0,33.33,,
-609,ModernBrain,Rena Zhuang,768.63,0.0,33.33,,
-610,Rye,Sahil Velamoor,767.87,50.0,0.0,,
-611,West Boca Raton,Addison Lullove,766.39,33.33,0.0,,
-612,Peninsula,Grace Yun,765.79,0.0,40.0,,
-613,Marlborough,Maya Fischer,764.48,0.0,33.33,,
-614,Marlborough,Elissa Liu,761.57,33.33,0.0,,
-615,Pine View,Brady Bartram,758.48,33.33,0.0,,
-616,Edgemont,Emil Sony,751.47,0.0,33.33,,
-617,Dreyfoos Arts,Natalie Vidal,742.11,33.33,0.0,,
-618,Clark Advanced Learning Center,Ezekiel Liberty,740.84,0.0,33.33,,
-619,Immaculate Heart,Semiah Huang,739.21,33.33,0.0,,
-620,Stuyvesant,Yuna Lee,728.46,16.67,0.0,,
-621,Cabot,Mattie Jimmerson,725.67,0.0,0.0,,
-622,McNeil,Prisha Parimal,724.92,0.0,0.0,,
-623,Loyola,Jesse Roybal,724.38,0.0,0.0,,
-624,Barack Obama Male Leadership Academy (HS),Bernardo Esquivel,724.1,0.0,0.0,,
-625,Berkeley Carroll,Zachary Mattis-Thomas,720.99,0.0,33.33,,
-626,"Russellville HS - Russellville, AR",Madison Mckown,718.82,0.0,33.33,,
-627,West Des Moines Valley,Elijah Peterson,718.2,0.0,0.0,,
-628,Edina,Angela Huang,708.25,0.0,0.0,,
-629,McCallum,Mia Foster,699.92,0.0,0.0,,
-630,West Des Moines Valley,Ian Garriott,698.48,0.0,0.0,,
-631,Belen Jesuit Prep,Austin Marrero,693.91,0.0,0.0,,
-632,Brooklyn Technical,Rafael Gabinete,680.9,0.0,0.0,,
-633,St Mary's Hall,Veeraj Bajaj,679.18,0.0,0.0,,
-634,Emerson,Sai Sumouna Kota,661.78,0.0,0.0,,
-635,Edgemont,Yuvraj Arora,658.52,0.0,0.0,,
-636,Advanced Technologies,Yair Maldonado,658.48,33.33,0.0,,
-637,Regent Legacy,Katie Cole,658.32,,0.0,,
-638,Golden State,Saran Thummati,650.42,0.0,0.0,,
-639,Clear Lake,Om Shelar,648.11,0.0,0.0,,
-640,Interlake,Ridha Fathima Maliyakkal,644.56,0.0,0.0,,
-641,Regent Legacy,Rene Negrete Jr.,643.61,0.0,0.0,,
-642,Lassiter,Haran Anand,633.1,20.0,0.0,,
-643,Pinewood,Ryan Peng,624.24,0.0,0.0,,
-644,Dripping Springs,Annika Gillella,624.22,0.0,0.0,,
-645,Peninsula,Eva Christen,620.95,0.0,0.0,,
-646,Winter Park,Tate Stanford,613.74,0.0,0.0,,
-647,Bellevue Youth,Isabelle Eunsoo Han,604.71,0.0,0.0,,
-648,Belen Jesuit Prep,Matthew Carracso,600.67,0.0,0.0,,
-649,Flintridge Prep,Ekam Dadwal,596.45,0.0,0.0,,
-650,LAMP,Minjoo Kwak,594.45,0.0,0.0,,
-651,West Des Moines Valley,Anna Stevens,589.64,0.0,0.0,,
-652,Hawken,Ian Krouse,573.34,0.0,0.0,,
-653,Meadows,Emily Lei,566.05,0.0,0.0,,
-654,McCallum,Jack Formby,541.85,0.0,0.0,,
-655,Carrollwood Day,Jaylen Dilkhush,486.82,0.0,0.0,,
-656,Meadows,Faith Roby,456.32,0.0,0.0,,
-657,Lake Mary,Fatima Mirza,439.84,0.0,0.0,,
+1,OCSA,Iva Liu,1852.59,75.0,100.0,100.0,100.0
+2,Marlborough,Lucia Sanchez Gagerman,1848.63,87.5,100.0,80.0,100.0
+3,Clear Lake,Cathryn Wu,1839.27,100.0,85.71,,80.0
+4,Clear Lake,Roger Zhen,1808.18,85.71,100.0,75.0,
+5,Lexington,Omar Obeidat,1800.5,50.0,100.0,100.0,100.0
+6,Vestavia Hills,Veronica Zhang,1783.99,80.0,100.0,66.67,100.0
+7,Lynbrook,Jason Rong,1781.82,80.0,100.0,100.0,100.0
+8,Memorial,Erin Jia,1771.4,75.0,83.33,100.0,66.67
+9,West HS SLC,Luka Mishchenko,1767.95,66.67,83.33,66.67,100.0
+10,Plano West,Skanda Gopikannan,1759.95,66.67,100.0,100.0,100.0
+11,Greenhill,Eric Xing,1741.41,83.33,66.67,66.67,
+12,Strath Haven,Noel Springer,1735.28,60.0,100.0,50.0,100.0
+13,Holy Trinity Episcopal,Chance Hudson,1734.27,75.0,100.0,0.0,100.0
+14,BASIS Silicon Valley,Jason Kuo,1733.67,62.5,88.89,50.0,66.67
+15,Bronx Science,Lili Sella,1721.52,75.0,85.71,0.0,100.0
+16,Valley Christian,Vanessa Xu,1712.06,100.0,75.0,100.0,0.0
+17,Harvard-Westlake,Kaison Maruyama,1691.38,66.67,85.71,,75.0
+18,Riverside Independent,Shiwen Huang,1688.4,75.0,100.0,0.0,100.0
+19,Mountain View,Andrea Wong,1685.68,63.64,85.71,60.0,100.0
+20,Phillips Exeter Independent,James Moon,1684.01,88.89,55.56,66.67,66.67
+21,Memorial,Brendan Liu,1678.87,75.0,80.0,100.0,50.0
+22,Harrison,Flynn Williams,1674.4,50.0,100.0,0.0,100.0
+23,Brophy,Adrian Piel,1664.6,71.43,66.67,75.0,
+24,Edgemont,Arjun Gupta,1654.61,66.67,83.33,,66.67
+25,Harker,Jonathan Sun,1646.97,75.0,80.0,0.0,100.0
+26,Mountain View,Christopher Shin,1646.33,66.67,83.33,,66.67
+27,New York State Independent,Avi Sawhney,1646.33,80.0,66.67,50.0,
+28,Southlake Carroll,Adhvay Thummalakunta,1641.99,75.0,75.0,0.0,100.0
+29,BASIS Silicon Valley,Vihaan Patel,1632.46,80.0,100.0,50.0,
+30,Papaya Valley,Adit Agarwal,1629.39,80.0,75.0,50.0,100.0
+31,Flintridge Prep,Colin Xiang,1626.9,61.54,87.5,57.14,100.0
+32,BASIS Chandler,Wareesha Islam,1626.27,75.0,83.33,0.0,100.0
+33,Harrison,Kevin Iwanski,1621.84,33.33,100.0,,100.0
+34,Huang Independent,Han Huang,1617.38,75.0,66.67,100.0,66.67
+35,St Thomas,Craig O'Sullivan,1615.13,66.67,75.0,66.67,50.0
+36,Lynbrook,Vihaan Kandala,1606.38,50.0,100.0,0.0,100.0
+37,Harker,Arush Savla,1603.56,40.0,100.0,50.0,100.0
+38,Southlake Carroll,Aarav Bollini,1601.88,66.67,80.0,,50.0
+39,Danville Area,David Nemoianu,1595.94,75.0,75.0,0.0,100.0
+40,Dougherty Valley Independent,Pranav Narra,1586.55,60.0,100.0,50.0,
+41,Memorial,Adrienne Wang,1585.64,66.67,66.67,0.0,66.67
+42,Harrison,Sebastian Engle,1583.14,66.67,60.0,66.67,25.0
+43,Harker,Siddhartha Daswani,1577.68,80.0,66.67,50.0,
+44,Ardsley,Naumika Naresh,1577.48,50.0,80.0,0.0,100.0
+45,Harker,Ethan Xu,1569.5,50.0,100.0,0.0,100.0
+46,Strake Jesuit College Prep,Eric Xiong,1568.21,60.0,75.0,50.0,100.0
+47,Palo Alto,Yihan Zhao,1563.32,50.0,100.0,0.0,
+48,Marlborough,Rory Baskin,1554.97,50.0,71.43,0.0,50.0
+49,Pingry,Sophie Hao,1554.51,50.0,75.0,0.0,100.0
+50,Cary Acad,Riley Powell,1549.85,75.0,100.0,0.0,
+51,Gunn,Sophia Parang,1544.67,50.0,100.0,50.0,
+52,Greenhill,Ali Naseem,1540.94,60.0,66.67,50.0,
+53,McNeil,Joseph Lijoy,1537.05,50.0,100.0,0.0,100.0
+54,Lynbrook,Angeline Su,1532.61,83.33,50.0,66.67,100.0
+55,Trinity Prep,Graham Paul,1529.49,75.0,66.67,0.0,
+56,Independent Hamilton,Grace Jiao,1525.19,50.0,100.0,0.0,100.0
+57,RFS Independent,Elliott Wildman,1524.61,66.67,80.0,,50.0
+58,Newark Science,Stella Rodriguez,1521.94,50.0,100.0,0.0,
+59,Memorial,Evelyn Shao,1520.85,42.86,75.0,50.0,50.0
+60,Lake Highland Prep,Zachary Morley,1500.46,75.0,66.67,0.0,
+61,Harvard-Westlake,Owen Fua,1499.61,50.0,100.0,0.0,
+62,Mountain Brook,Winston Rocque,1488.1,66.67,66.67,66.67,
+63,Research Triangle,Karan Parekh,1487.78,75.0,66.67,0.0,
+64,Strake Jesuit College Prep,Lucas Chritah,1483.2,25.0,100.0,0.0,100.0
+65,American Heritage Broward,Roshni Nair,1483.03,60.0,66.67,50.0,
+66,Fairmont Prep,Aaron Wang,1482.13,66.67,75.0,,0.0
+67,Flower Mound,Krish Kulkarni,1477.58,100.0,25.0,,0.0
+68,Harvard-Westlake,August Sone,1476.82,66.67,60.0,,50.0
+69,Sharks Independent,Kevin Zhang,1474.99,33.33,80.0,,50.0
+70,Harker,Luke Xing,1473.19,100.0,50.0,,0.0
+71,Plano West,Zayd Mahmud,1471.71,75.0,66.67,0.0,
+72,Harvard-Westlake,Jacob Waxman,1468.15,40.0,71.43,0.0,75.0
+73,Lynbrook,Shrihan Thangam,1466.91,75.0,50.0,100.0,0.0
+74,Rock Hill,Tilak Datta Iyer,1464.31,50.0,80.0,0.0,100.0
+75,Lake Highland Prep,Neel Aparanji,1459.11,75.0,66.67,0.0,
+76,Tom Glenn,Jackson Meekma,1458.57,33.33,80.0,,50.0
+77,Strake Jesuit College Prep,Nathan Fan,1458.51,100.0,50.0,,0.0
+78,Horace Greeley,Chris Correia,1457.05,75.0,66.67,0.0,
+79,Durham,Gabriel Whangbo-Olvera,1455.62,75.0,50.0,100.0,0.0
+80,Little Rock Central,Gabrielle Torrence,1455.47,33.33,80.0,,50.0
+81,Monta Vista,Steven Chi,1451.47,66.67,57.14,0.0,0.0
+82,Dougherty Valley Independent,Stanley Liu,1450.66,66.67,75.0,,0.0
+83,Harker,Rohan Goyal,1446.72,25.0,100.0,0.0,
+84,Milpitas,Aarav Mathur,1442.22,66.67,50.0,,0.0
+85,Sunny Hills Independent,Jonah Kim,1439.08,57.14,57.14,50.0,0.0
+86,Fulton Science,Adhiyan Karthikeyan,1435.93,50.0,66.67,0.0,
+87,Harvard-Westlake,Elijah Yguado,1433.76,22.22,87.5,0.0,50.0
+88,Northern Valley,Aaron Choi,1433.72,33.33,80.0,,50.0
+89,Strake Jesuit College Prep,Ayaan Yakoob,1432.9,66.67,50.0,,0.0
+90,Lake Highland Prep,Amitav Dalal,1430.05,66.67,60.0,,50.0
+91,Archbishop Mitty,Ayush Gupta,1428.59,75.0,50.0,100.0,0.0
+92,Lake Highland Prep,Adam Wayne,1424.02,60.0,66.67,50.0,
+93,Carlsbad,Graham Tipton,1422.91,50.0,62.5,,50.0
+94,Jericho Unaffiliated,Lori Li,1422.32,100.0,25.0,100.0,0.0
+95,Dougherty Valley Independent,Siddharth Vedam,1420.39,25.0,100.0,0.0,100.0
+96,Flintridge Prep,Connor Kao,1419.17,100.0,40.0,,50.0
+97,Phillips Exeter Independent,Gabriel Koh,1418.54,33.33,75.0,,0.0
+98,Peninsula,Stella Pellier,1413.64,50.0,75.0,0.0,100.0
+99,Strake Jesuit College Prep,Soluchi Aneji,1412.15,50.0,66.67,0.0,
+100,Cary Acad,Teagan Bolt,1408.27,25.0,100.0,0.0,100.0
+101,St John's,Wyatt Greenberg,1403.8,33.33,75.0,,50.0
+102,Marlborough,Elili Flore,1402.09,60.0,66.67,50.0,
+103,Portola,Jayden Lee,1400.7,25.0,100.0,0.0,
+104,Harrison,Atharv Gandhi,1399.85,50.0,75.0,100.0,0.0
+105,Archbishop Mitty,Yatharth Sathya,1397.23,66.67,50.0,,0.0
+106,Strake Jesuit College Prep,Matthew Zong,1395.96,75.0,33.33,0.0,
+107,Brophy,Vincent Wang,1390.91,60.0,66.67,50.0,
+108,Phillips Exeter Independent,Tesu Ham,1389.26,66.67,50.0,,0.0
+109,"Russellville HS - Russellville, AR",Madison Mckown,1386.89,33.33,75.0,,0.0
+110,American Heritage Palm Beach,Nico Ignatowich,1382.66,66.67,60.0,,50.0
+111,Phillips Exeter Independent,Amber Deng,1377.84,75.0,33.33,0.0,
+112,Loyola,Thatcher Hartman,1372.68,100.0,66.67,100.0,66.67
+113,Millard North,Lucio Turco,1371.31,66.67,60.0,,50.0
+114,Harker,Ishaan Dhillon-Patel,1371.22,33.33,75.0,,0.0
+115,Strake Jesuit College Prep,Kevin Song,1370.94,75.0,50.0,100.0,0.0
+116,Greenhill,Samy Santosh,1370.09,50.0,66.67,0.0,
+117,Dulles,Claire Zhou,1368.76,33.33,75.0,,0.0
+118,Greenhill,Owen Gao,1363.66,50.0,66.67,0.0,
+119,San Marino,Ethan Chow,1353.16,50.0,66.67,0.0,
+120,Harker,Ryan Lin,1353.16,25.0,100.0,0.0,
+121,Peninsula,Ayan Uppal,1337.63,33.33,75.0,,0.0
+122,Memorial,Anna Dong,1335.53,50.0,66.67,0.0,
+123,Riverside Independent,Princeton Kang,1334.3,25.0,100.0,0.0,
+124,Sharks Independent,Kylin Wu,1329.65,50.0,66.67,0.0,
+125,Bronx Science,Amira Miller,1329.29,50.0,66.67,0.0,
+126,Westridge,Yuna Wu,1327.47,66.67,42.86,,0.0
+127,Gunn HS Independent,Ira Tiwary,1325.88,66.67,50.0,,0.0
+128,University,Alex Huang,1325.7,25.0,100.0,50.0,
+129,John Cooper,Tyler Xu,1325.26,0.0,100.0,0.0,
+130,Greenhill,Vivek Thankavel,1322.82,33.33,75.0,,0.0
+131,Louis D. Brandeis,Siddharth Rao,1321.29,100.0,25.0,,0.0
+132,Harker,Jay Agarwal,1320.18,25.0,100.0,0.0,
+133,Commonwealth,Julian Bernhoft,1319.39,50.0,66.67,0.0,
+134,Winston Churchill,Teague Cantey,1317.76,66.67,33.33,,
+135,DuPont Manual HS Youth Performing Arts,Aanya Veeranagoudar,1314.76,50.0,66.67,0.0,
+136,Southlake Carroll,Ibraheem Mushtaq,1309.54,66.67,50.0,,0.0
+137,Princeton,Jaden Zarate,1307.03,50.0,66.67,0.0,
+138,Hawken,Evan Bai,1306.63,33.33,75.0,,0.0
+139,Honor,Aryan Sharma,1303.46,75.0,33.33,0.0,
+140,Immaculate Heart,Audrey Eckert,1300.8,33.33,80.0,0.0,100.0
+141,University,Sam Streem,1295.75,50.0,66.67,0.0,
+142,Marlborough,Julia Kang,1294.9,28.57,66.67,0.0,
+143,Mission San Jose,Siddharth Lagisetty,1294.09,66.67,50.0,,0.0
+144,Pinewood,Claire Au,1293.45,50.0,57.14,,0.0
+145,Meadows,Teighlor Bloyd,1292.67,66.67,50.0,,0.0
+146,Peninsula,Jack Erikson,1291.21,25.0,80.0,0.0,100.0
+147,Immaculate Heart,Olivia Amir,1289.98,50.0,50.0,33.33,0.0
+148,Hill,Sahith Mangu,1288.55,40.0,66.67,0.0,66.67
+149,Marlborough,Ella Pishva,1288.14,50.0,66.67,0.0,
+150,Southlake Carroll,Trevor Bean,1287.87,50.0,66.67,0.0,
+151,RFS Independent,Jayveer Mehta,1287.81,33.33,66.67,,
+152,Dougherty Valley Independent,NagaVikhyath Malineni,1285.81,33.33,75.0,,0.0
+153,Marlborough,Alisha Kim,1283.39,33.33,75.0,,0.0
+154,Harvard-Westlake,Hattie Pfanschmidt,1279.81,33.33,66.67,,
+155,Mountain Brook,Sam Williams,1279.0,50.0,66.67,0.0,
+156,St John's,Daren Hu,1278.9,33.33,66.67,,
+157,Cary Acad,Levin Ma,1270.69,50.0,66.67,0.0,
+158,Coppell,Jenani Sivamani,1270.66,66.67,33.33,,
+159,Harrison,Jordan Blake,1269.7,33.33,66.67,,
+160,Shipley Independent,Draco Ma,1262.96,33.33,100.0,,
+161,Colorado Academy Independent,Hendrik Jordaan,1261.96,66.67,33.33,,
+162,Mountain Lakes,Ishaan Goyal,1259.55,33.33,66.67,,
+163,Marlborough,Maya Fischer,1256.3,33.33,66.67,,
+164,LAMP,Rahaf Kunnibhavi,1254.15,66.67,33.33,,
+165,Dougherty Valley,NagaVikhyath Malineni,1252.66,66.67,33.33,,
+166,St Andrew's Episcopal,Melissa Khadivi,1252.21,33.33,66.67,,
+167,Emerald,Advait Wankhede,1249.13,0.0,100.0,,
+168,RFS Independent,Ennis Elferrane,1247.47,33.33,66.67,,
+169,Iowa City West,Faisal Hamzeh,1243.72,33.33,66.67,,
+170,Pacific Collegiate,Jayden Xing,1241.35,66.67,33.33,,
+171,Strake Jesuit College Prep,Diego Villareal,1240.59,0.0,100.0,,
+172,All Saints Episcopal School - Tyler,Isaac Dale,1239.52,66.67,33.33,,
+173,Sacred Heart Atherton,Derek Meng,1238.68,33.33,66.67,,
+174,Eagan,Nickole Lin,1238.08,33.33,66.67,,
+175,Apple Valley,Zachary Craig,1233.52,33.33,66.67,,
+176,Edgemont,Anya Pathak,1231.34,66.67,33.33,,
+177,Marlborough,Chloe Swidler,1230.78,33.33,66.67,,
+178,Park City,Mia Sawyer,1227.52,33.33,66.67,,
+179,Flintridge Prep,Ekam Dadwal,1227.42,33.33,66.67,,
+180,Millburn,Adyaan Kibria,1225.34,33.33,66.67,,
+181,Loyola,Ethan Dumper,1222.72,50.0,100.0,50.0,100.0
+182,McNeil,Kashyap Vadlamani,1220.63,66.67,33.33,,
+183,Scarsdale,Anushri Rana,1219.53,33.33,66.67,,
+184,Westwood,Ayushi Thakur,1218.9,33.33,66.67,,
+185,Walpole,Shaurya Panchal,1217.96,0.0,100.0,,
+186,Lynbrook,Skanda Vasishta,1215.52,66.67,33.33,,
+187,Eagan,Ethan Mann,1209.21,66.67,33.33,,
+188,Lake Highland Prep,Sanjana Mannepalli,1207.53,33.33,66.67,,
+189,Valley Christian,Yohaan Narayanan,1204.64,33.33,66.67,,
+190,John Cooper,Ria Rapaka,1202.79,33.33,66.67,,
+191,Jericho Unaffiliated,Yifan Gao,1202.56,33.33,50.0,,
+192,Marlborough,Sami Shapiro,1201.36,33.33,66.67,,
+193,Marlborough,Sara Tateshima,1201.24,66.67,33.33,,
+194,Marlborough,Joy Wei,1200.33,66.67,33.33,,
+195,Strake Jesuit College Prep,Franklin Barron,1199.14,33.33,66.67,,
+196,Peninsula,Gloria He,1198.47,33.33,66.67,,
+197,Saratoga,Soham Garg,1198.15,66.67,33.33,,
+198,Kinkaid,Chris Mo,1194.12,33.33,66.67,,
+199,Strake Jesuit College Prep,Jeffery Wei,1191.73,66.67,33.33,,
+200,McNeil,Anshul Pancholi,1191.67,33.33,66.67,,
+201,Boston Latin,Abrielle Huang,1191.19,33.33,66.67,,
+202,Harker,Leah Koo,1191.11,66.67,33.33,,
+203,Harvard-Westlake,Sage Bonotto,1187.22,66.67,33.33,,
+204,St Mary's Hall,Veeraj Bajaj,1183.24,66.67,0.0,,
+205,Strake Jesuit College Prep,Samuel Wawi,1182.57,33.33,66.67,,
+206,Bronx Science,Zuri Yaw Costello,1182.44,66.67,33.33,,
+207,Bellaire,Ethan Reichek,1178.66,33.33,66.67,,
+208,Lake Highland Prep,Aayan Malik,1177.35,0.0,100.0,,
+209,Littleton,Maddie Kusner,1175.81,33.33,66.67,,
+210,San Marino,Caden Jin,1175.27,66.67,33.33,,
+211,Westwood,Aarya Patel,1169.37,33.33,66.67,,
+212,Immaculate Heart,Camille Johns,1168.75,33.33,66.67,,
+213,James Logan,Eon Gu,1168.55,33.33,66.67,,
+214,Sage Hill,Sebastian Chang,1168.18,40.0,50.0,,
+215,Harker,Krish Arora,1167.93,33.33,66.67,,
+216,Harker,Benjamin Fu,1167.71,33.33,66.67,,
+217,Clark Advanced Learning Center,Michael Guffin,1166.87,33.33,66.67,,
+218,Harrison,Gabriella Catanzariti,1166.23,33.33,66.67,,
+219,Ridge,Amandeep Manda,1163.2,33.33,66.67,,
+220,Leland,Shivansh Sathya,1161.82,33.33,66.67,,
+221,Sandy Independent,Olivia Sandy,1160.31,100.0,0.0,,
+222,Strath Haven,Michael Chen,1160.25,33.33,66.67,,
+223,Dougherty Valley Independent,Matthew Jacob,1158.49,100.0,0.0,,
+224,Canyon Crest,Jayden Yoon,1154.54,33.33,50.0,,
+225,Southlake Carroll,Agasthya Akella,1152.83,66.67,33.33,,
+226,Millburn,Svara Buch,1152.76,33.33,66.67,,
+227,Ridge,Aditya Bajaj,1152.26,66.67,33.33,,
+228,Marlborough,Audrey Lohara,1151.98,66.67,33.33,,
+229,Jericho Unaffiliated,Sylvia Song,1151.31,33.33,66.67,,
+230,RFS Independent,Rishi Andhe,1149.97,33.33,66.67,,
+231,Harrison,Ashley Cho,1149.16,33.33,66.67,,
+232,James Logan,Akhil Jalagam,1148.83,33.33,66.67,,
+233,Geffen Academy of UCLA,Josephine Park,1145.07,66.67,50.0,,
+234,Cupertino Independent,Aarini Chadha,1144.59,66.67,33.33,,
+235,Westwood,Diya Venkataragavan,1144.43,33.33,66.67,,
+236,Lexington,Kevin Zhang,1143.92,66.67,33.33,,
+237,Lynbrook,Rohin Saharoy,1143.54,33.33,66.67,,
+238,Iowa City West,Advita Arora,1142.61,33.33,66.67,,
+239,Needham Independent,Daniel Choi,1141.46,33.33,66.67,,
+240,Peninsula,Jiayu Tang,1140.0,33.33,66.67,,
+241,Northwood,Natalie Chen,1138.12,66.67,33.33,,
+242,Mullen,Jack Simmons,1132.69,66.67,33.33,,
+243,Lake Highland Prep,Shiva Sambandam,1131.29,33.33,66.67,,
+244,Plano West,Snehit Basu,1129.16,33.33,66.67,,
+245,Coppell,Mezi Mbanugo,1125.12,33.33,66.67,,
+246,Laurel,Claire Witalec,1123.5,33.33,66.67,,
+247,University,Avi Asur,1122.57,0.0,100.0,,
+248,Mountain Brook,James Burnette,1121.56,66.67,33.33,,
+249,Westlake,Miranda He,1120.66,33.33,66.67,,
+250,Immaculate Heart,Charlotte Obdrzalek-Souls,1118.65,66.67,33.33,,
+251,University,Karan Bahl,1118.25,66.67,33.33,,
+252,Equality Independent,Santiago Jimenez Butcher,1116.13,66.67,33.33,,
+253,Harker,Jackson Yue,1114.45,33.33,66.67,,
+254,LAMP,Jongwoo Lee,1114.19,33.33,66.67,,
+255,Marlborough,Ceci Sanchez Gagerman,1113.2,16.67,66.67,,
+256,Valley Christian,Ellie Mui,1103.5,66.67,33.33,,
+257,BASIS Phoenix,Vismai Nair,1102.53,33.33,33.33,,
+258,Westridge,Katherine Duan,1102.4,16.67,66.67,,
+259,Bellevue Youth,Emma Lu,1101.07,66.67,33.33,,
+260,Immaculate Heart,Carson Mueller,1100.86,66.67,33.33,,
+261,OC Policy Association,Natalie Chen,1096.77,33.33,66.67,,
+262,Canyon Crest,Calista Ding,1096.39,66.67,33.33,,
+263,Boerne Champion,Caleb Wells,1095.18,66.67,33.33,,
+264,Brophy,Adrish Gande,1091.62,33.33,66.67,,
+265,Harvard-Westlake,Trevor Kim,1091.5,66.67,33.33,,
+266,Harvard-Westlake,Sydney Lee,1091.22,33.33,66.67,,
+267,Cupertino,Ayeshwarya Sisodia,1090.32,50.0,33.33,,
+268,Tom Glenn,Manvi Merothiya,1089.23,33.33,33.33,,
+269,Millard North,Alexis Jamal,1083.19,0.0,66.67,,
+270,Arlington,Layla Chuaqui,1082.86,33.33,33.33,,
+271,Harvard-Westlake,Dylan Kaw,1072.95,33.33,50.0,,
+272,Chaminade,Owen Sack,1072.68,66.67,33.33,,
+273,John Cooper,Kevin Liu,1072.36,33.33,33.33,,
+274,Homestead Independent,Neil Khandekar,1070.43,33.33,40.0,,
+275,Leland,Alex Tang,1070.18,33.33,33.33,,
+276,JBS Law Magnet,Asher Fragapane,1067.5,33.33,66.67,,
+277,Iowa City West,Vivaan Dudeja,1066.11,33.33,33.33,,
+278,Dulles,Diya Ethiraj,1065.85,33.33,33.33,,
+279,Notre Dame San Jose,Tara Balaji,1065.66,66.67,33.33,,
+280,Harker,Jessie Cao,1063.19,33.33,66.67,,
+281,Harrison,Paige Bianchini,1054.83,33.33,33.33,,
+282,Lake Highland Prep,Aarav Bansal,1052.2,33.33,66.67,,
+283,Mission San Jose,Anirudh Balaji,1051.45,33.33,33.33,,
+284,Frazer,Leo Dudas,1048.37,0.0,100.0,,
+285,Peninsula,Wenxi Jiang,1048.16,25.0,40.0,0.0,0.0
+286,Cypress,Aaron Mao,1047.62,33.33,33.33,,
+287,Equality Independent,Vincent Melendez,1046.34,33.33,33.33,,
+288,Harker,Maggie Sun,1044.11,0.0,100.0,,
+289,Immaculate Heart,Semiah Huang,1029.62,33.33,33.33,,
+290,Able2Shine,Justin Xu,1028.23,33.33,33.33,,
+291,Coppell,Vir Dubey,1026.81,33.33,33.33,,
+292,Marlborough,Clara Merchan,1025.23,33.33,33.33,,
+293,Holy Trinity Episcopal,Shanvi Patel,1023.27,0.0,66.67,,
+294,Marlborough,Sophie Weiss,1022.4,66.67,0.0,,
+295,Marlborough,Kensi Renwick,1022.02,66.67,33.33,,
+296,Neenah,Olivia Bushman,1021.34,50.0,50.0,,
+297,Bellaire,Nathaniel Pate,1021.07,0.0,66.67,,
+298,Able2Shine,Avery Feng,1019.41,33.33,33.33,,
+299,Millburn,Saumya Katariya,1017.23,0.0,66.67,,
+300,Jasper,Ojas Sonawane,1015.74,33.33,33.33,,
+301,Trinity Prep,Sami Haddadin,1012.68,33.33,33.33,,
+302,Dripping Springs,Annika Gillella,1011.57,0.0,66.67,,
+303,Harker,Aman Ahmed,1010.43,66.67,0.0,,
+304,Marlborough,Mila Lanin,1006.19,33.33,33.33,,
+305,Able2Shine,Mason Sterling,1005.24,33.33,33.33,,
+306,Lynbrook,Siqi Yuan,1003.65,0.0,66.67,,
+307,Peninsula,Noam Kail,997.16,0.0,66.67,,
+308,Harvard-Westlake,Ellie Oh,992.62,33.33,33.33,,
+309,Meadows,Chase Park,991.0,33.33,33.33,,
+310,Immaculate Heart,Mercer Lavietes,988.14,0.0,66.67,,
+311,Basis Scottsdale Independent,Aarnav Verma,986.77,50.0,16.67,,
+312,Newark Science,Elias Hodge,984.87,0.0,66.67,,
+313,Eagan,Myan Ly,984.53,0.0,66.67,,
+314,Marlborough,Shani Shllaku,983.05,33.33,33.33,,
+315,Newark Science,Kevin Ramos,982.18,33.33,33.33,,
+316,Sharks Independent,Jacob Fu,981.82,0.0,66.67,,
+317,Walnut Grove Secondary,Chenyin Ye,980.5,33.33,33.33,,
+318,University,Andrew Noel,978.7,33.33,33.33,,
+319,Jericho Unaffiliated,Alice Liu,977.59,33.33,33.33,,
+320,Harker,Alvin Siamwalla,976.27,33.33,33.33,,
+321,Colorado,Hendrik Jordaan,975.23,66.67,0.0,,
+322,Lexington,Ethan Le,970.46,66.67,0.0,,
+323,Valley Christian,Aarush Kamma,970.31,33.33,33.33,,
+324,Southlake Carroll,Sneha Athipatla,969.78,0.0,66.67,,
+325,Emerson,Ava Manning,967.69,66.67,0.0,,
+326,Montgomery Blair,Olivia Ren,965.92,0.0,66.67,,
+327,Seven Lakes,Vladislav Shumskiy,965.12,33.33,33.33,,
+328,Dougherty Valley,Vidir Vasa,964.94,66.67,0.0,,
+329,Sage Hill,Isabella Huang,964.82,20.0,25.0,0.0,0.0
+330,Ridge,Sehyun Park,964.51,33.33,33.33,,
+331,Marlborough,Ella Bailey-Eisenberg,960.88,33.33,33.33,,
+332,Gunn,Ira Tiwary,956.13,33.33,33.33,,
+333,Greenhill,Gitanjali Agastya,955.86,0.0,66.67,,
+334,Edgemont,Samrajya Singh,955.58,33.33,33.33,,
+335,West Des Moines Valley,Judah Carpenter Hutchcroft,954.51,33.33,33.33,,
+336,Harvard-Westlake,Ayla Rahmani,953.6,33.33,33.33,,
+337,Marlborough,Selvi Radia,952.71,33.33,33.33,,
+338,Jasper,Joshua Shu,948.65,33.33,33.33,,
+339,Lake Highland Prep,Sebastian Adam,948.18,33.33,33.33,,
+340,Immaculate Heart,Vivian Molina,947.55,33.33,33.33,,
+341,Lexington,Ray Cui,947.07,0.0,66.67,,
+342,Plano West,Natalia Ryma Souvalian,943.5,0.0,50.0,,
+343,West Des Moines Valley,Kate Hoerr,943.33,33.33,33.33,,
+344,Newark Science,Nalayna Bunion,940.54,66.67,0.0,,
+345,Iowa City West,Vanya Dudeja,939.75,33.33,33.33,,
+346,Marlborough,Elodie Lassere,937.99,33.33,33.33,,
+347,Lincoln-Sudbury,Alisa Paley,934.69,0.0,66.67,,
+348,Harvard-Westlake,Jaimee Lee,933.6,33.33,33.33,,
+349,Lexington,Sanjana Devarajan,930.34,33.33,33.33,,
+350,Plano East,Julia Nash,929.27,0.0,66.67,,
+351,Youth Development Resource Center,Justin Li,927.48,66.67,0.0,,
+352,Plano West,Tharon Lei,920.67,33.33,33.33,,
+353,Eagan,Niveditha Bethi,917.92,0.0,66.67,,
+354,Myers Park,Isabella Lore,911.71,33.33,33.33,,
+355,Leland,Ananya Khandelwal,911.08,0.0,66.67,,
+356,ModernBrain,Milana Lee,909.26,33.33,0.0,,
+357,Harrison,Jazlah Ahmed,908.79,0.0,66.67,,
+358,Harvard-Westlake,Annabel Lin,906.65,33.33,0.0,,
+359,Tom Glenn,Holly O'Daniel,901.85,33.33,33.33,,
+360,Sid Batchu Independent,Sid Batchu,900.17,66.67,0.0,,
+361,Honor,Leslie Choi,897.88,33.33,33.33,,
+362,Bronx Science,Saide Feliz,895.87,33.33,33.33,,
+363,Edgemont,Yuvraj Arora,895.35,0.0,66.67,,
+364,Westwood,Meileen Bulger,895.35,33.33,33.33,,
+365,Jasper,Ethan Xu,893.73,0.0,66.67,,
+366,Marlborough,Sofia Cwikla,893.7,0.0,66.67,,
+367,Bronx Science,Cynthia Li,891.69,0.0,66.67,,
+368,Sierra Canyon,Rena Zhuang,891.48,16.67,20.0,,
+369,Marlborough,Carrara Ingersoll,889.01,33.33,33.33,,
+370,Immaculate Heart,Miya Yamato,856.21,33.33,33.33,,
+371,Harker,Om Hari,855.11,33.33,0.0,,
+372,Webb,Lloyd Shin,847.3,33.33,33.33,,
+373,Peninsula,Eytan Ek,846.59,0.0,66.67,,
+374,Cabot,Joshua Durand,842.56,33.33,0.0,,
+375,Westwood,Evan Kim,842.2,33.33,0.0,,
+376,Dulles,Sanvi Kankatala,840.74,33.33,33.33,,
+377,Iowa City West,Duru Akgun,837.42,50.0,0.0,,
+378,Newark Science,Eli Myers-Muhammad,834.86,0.0,33.33,,
+379,Jackson County,Krish Patel,833.29,50.0,0.0,,
+380,Lake Highland Prep,Anoushka Shah,832.03,0.0,33.33,,
+381,University,Nelson Kude,830.33,0.0,33.33,,
+382,Harvard-Westlake,Emmanuel Canseco,821.05,0.0,33.33,,
+383,Dripping Springs,Liyana Ahmed,811.95,33.33,0.0,,
+384,Peninsula,Grace Yun,809.66,50.0,0.0,,
+385,Harrison,Oviya Gandhi,806.69,33.33,0.0,,
+386,Peninsula,Isaura Aguilar Valladares,802.42,0.0,33.33,,
+387,American Heritage Palm Beach,Cai Rudikoff,801.52,0.0,33.33,,
+388,Coppell,Khushi Singla,793.85,33.33,0.0,,
+389,Timber Creek,Macy Gluzerman,792.01,33.33,0.0,,
+390,Jericho Independent,Yifan Gao,788.86,0.0,33.33,,
+391,Southlake Carroll,Gatik Senthil,788.45,33.33,0.0,,
+392,Dripping Springs,Amani Ahmed,775.64,0.0,33.33,,
+393,Immaculate Heart,Athena Martinez,768.83,33.33,0.0,,
+394,Carlsbad,Autumn Perlman,761.27,16.67,16.67,,
+395,Head-Royce,Emet Adereth,760.75,33.33,0.0,,
+396,Newark Science,Adachi Chukwuemeka,759.6,0.0,33.33,,
+397,Premier Debate Academy LLC,Ilaria Allan,758.71,0.0,0.0,,
+398,Thousand Oaks,Beckett Jacobs-Bieley,755.99,20.0,0.0,,
+399,Lake Highland Prep,Sohum Mondal,755.96,0.0,33.33,,
+400,Crespi Carmelite,Rene Negrete Jr.,753.27,0.0,33.33,,
+401,Andrews,Colbrin Middlebrooks,750.57,0.0,0.0,,
+402,Immaculate Heart,Ace Parra-Christie,747.55,33.33,0.0,,
+403,Immaculate Heart,Cambria DesJardins,747.51,33.33,0.0,,
+404,Oxbridge,Chloe Caraffa,743.42,33.33,0.0,,
+405,Bellevue Youth,Corinne Song,742.6,33.33,0.0,,
+406,Lexington,Rithvik Iyer,731.37,0.0,33.33,,
+407,Westwood,Trisha Mehta,727.28,33.33,0.0,,
+408,Immaculate Heart,Bellamy Burke,713.37,33.33,0.0,,
+409,University,Nathen Mathew,702.52,33.33,0.0,,
+410,Valley Christian,Gordon Li,696.78,0.0,0.0,,
+411,Loyola,Cooper Kun,688.18,0.0,0.0,0.0,0.0
+412,Jordan,Yusuf Zaidi,653.37,0.0,0.0,,
+413,Immaculate Heart,Julianna Duckett,647.28,0.0,0.0,,
+414,Sethia Independent,Kiaan Sethia,646.09,0.0,0.0,,
+415,Highlands,Marshall Ta-Beadle,638.9,0.0,0.0,,
+416,Millard North,Tamil Kumar,638.53,0.0,0.0,,
+417,Keller,Kaitlyn Izquierdo,636.16,0.0,0.0,,
+418,Lassiter,Haran Anand,636.14,0.0,0.0,,
+419,Clark Advanced Learning Center,Ezekiel Liberty,634.64,0.0,0.0,,
+420,Marlborough,Joey Snyder,632.54,0.0,0.0,,
+421,Crespi Carmelite,Mateo Negrete,626.08,0.0,0.0,,
+422,Bellaire,Lucas Nanny,623.27,0.0,0.0,,
+423,Marvin Ridge,Anya Agarwal,620.07,0.0,0.0,,
+424,Timber Creek,Max Cortez,617.29,0.0,0.0,,
+425,Keller,Ali Al-Daffaie,612.4,0.0,0.0,,
+426,Trinity Prep,Cary McCaghren,579.56,0.0,0.0,,
+427,Marlborough,Nima Walker,566.8,0.0,0.0,,
+428,Newark Science,Momina Riasat,560.08,0.0,0.0,,
