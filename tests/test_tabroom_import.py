@@ -31,6 +31,13 @@ class RequestValidationTest(unittest.TestCase):
             383405,
         )
 
+    def test_rejects_non_ascii_id_digits(self):
+        with self.assertRaisesRegex(ImportValidationError, "numeric tourn_id"):
+            parse_tabroom_id(
+                "https://www.tabroom.com/index/tourn/index.mhtml?tourn_id=²",
+                "tourn_id",
+            )
+
     def test_rejects_mismatched_tournament_ids(self):
         request = ImportRequest(
             tournament_url="https://www.tabroom.com/index/tourn/index.mhtml?tourn_id=40313",

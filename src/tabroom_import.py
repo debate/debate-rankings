@@ -22,7 +22,7 @@ def parse_tabroom_id(url: str, parameter: str) -> int:
     if parsed.scheme != "https" or parsed.netloc not in {"tabroom.com", "www.tabroom.com"}:
         raise ImportValidationError("URL must be an HTTPS Tabroom URL")
     values = parse_qs(parsed.query).get(parameter, [])
-    if len(values) != 1 or not values[0].isdigit():
+    if len(values) != 1 or not values[0].isascii() or not values[0].isdigit():
         raise ImportValidationError(f"URL must contain one numeric {parameter}")
     return int(values[0])
 
