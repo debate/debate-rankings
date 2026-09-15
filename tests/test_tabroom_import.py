@@ -1,7 +1,9 @@
+import json
 import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 import pandas as pd
 
@@ -12,12 +14,55 @@ from tabroom_import import (
     ImportRequest,
     ImportValidationError,
     infer_format,
+    install_import,
     normalize_entries,
     normalize_round,
     parse_tabroom_id,
     validate_dataset,
     validate_request,
 )
+
+
+def make_ukso_request() -> ImportRequest:
+    return ImportRequest(
+        tournament_url="https://www.tabroom.com/index/tourn/index.mhtml?tourn_id=40313",
+        event_url=(
+            "https://www.tabroom.com/index/tourn/fields.mhtml?"
+            "tourn_id=40313&event_id=383405"
+        ),
+        slug="ukso",
+        event_name="Lincoln-Douglas - TOC Bid Event",
+    )
+
+
+def make_valid_exports(root: Path) -> tuple[Path, list[DownloadedRound]]:
+    field_path = root / "field.csv"
+    round_path = root / "round.csv"
+    pd.DataFrame([
+        {
+            "Institution": "Able2Shine",
+            "Location": "CA/US",
+            "Entry": "Avery Feng",
+            "Code": "Able2Shine AF",
+        },
+        {
+            "Institution": "Harker",
+            "Location": "CA/US",
+            "Entry": "Aman Ahmed",
+            "Code": "Harker AA",
+        },
+    ]).to_csv(field_path, index=False)
+    pd.DataFrame([
+        {"Aff": "Able2Shine AF", "Neg": "Harker AA", "Judge": "J", "Win": "Aff"}
+    ]).to_csv(round_path, index=False)
+    return field_path, [
+        DownloadedRound(
+            ordinal=1,
+            round_id=1543295,
+            name="Round 1",
+            path=round_path,
+        )
+    ]
 
 
 class RequestValidationTest(unittest.TestCase):
@@ -164,3 +209,95 @@ class DatasetValidationTest(unittest.TestCase):
         )
 
         validate_dataset(entries, [round_item])
+
+
+class InstallImportTest(unittest.TestCase):
+    def test_installs_ordered_files_metadata_and_one_config_entry(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "config").mkdir()
+            (root / "config" / "hsld-config.json").write_text(
+                json.dumps({"tournaments": ["loyola", "ukso"], "majors": [], "multi_team_debaters": []})
+            )
+            field_path, rounds = make_valid_exports(root)
+            request = make_ukso_request()
+
+            installed = install_import(root, request, "National Speech and Debate Season Opener", field_path, rounds)
+
+            target = root / "tournaments" / "hsld" / "ukso"
+            self.assertEqual(installed.target, target)
+            self.assertTrue((target / "entries.csv").exists())
+            self.assertTrue((target / "01-round-1-1543295.csv").exists())
+            metadata = json.loads((target / "tabroom.json").read_text())
+            self.assertEqual(metadata["event_id"], 383405)
+            config = json.loads((root / "config" / "hsld-config.json").read_text())
+            self.assertEqual(config["tournaments"].count("ukso"), 1)
+
+    def test_refuses_to_replace_existing_slug(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            target = root / "tournaments" / "hsld" / "ukso"
+            target.mkdir(parents=True)
+            (target / "keep.txt").write_text("user data")
+            field_path, rounds = make_valid_exports(root)
+
+            with self.assertRaisesRegex(FileExistsError, "ukso"):
+                install_import(root, make_ukso_request(), "Season Opener", field_path, rounds)
+
+            self.assertEqual((target / "keep.txt").read_text(), "user data")
+
+    def test_replaces_existing_slug_only_when_refresh_is_explicit(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "config").mkdir()
+            (root / "config" / "hsld-config.json").write_text(
+                json.dumps({"tournaments": ["ukso"], "majors": [], "multi_team_debaters": []})
+            )
+            target = root / "tournaments" / "hsld" / "ukso"
+            target.mkdir(parents=True)
+            (target / "obsolete.csv").write_text("old data")
+            field_path, rounds = make_valid_exports(root)
+
+            install_import(
+                root,
+                make_ukso_request(),
+                "Season Opener",
+                field_path,
+                rounds,
+                replace_existing=True,
+            )
+
+            self.assertFalse((target / "obsolete.csv").exists())
+            self.assertTrue((target / "entries.csv").exists())
+
+    def test_refresh_restores_target_and_config_when_staged_install_fails(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config_path = root / "config" / "hsld-config.json"
+            config_path.parent.mkdir()
+            original_config = json.dumps({"tournaments": ["loyola"], "majors": [], "multi_team_debaters": []})
+            config_path.write_text(original_config)
+            target = root / "tournaments" / "hsld" / "ukso"
+            target.mkdir(parents=True)
+            (target / "keep.txt").write_text("user data")
+            field_path, rounds = make_valid_exports(root)
+            original_replace = Path.replace
+
+            def fail_staged_install(source: Path, destination: Path):
+                if source.name == "ukso" and destination == target:
+                    raise OSError("install failed")
+                return original_replace(source, destination)
+
+            with patch.object(Path, "replace", autospec=True, side_effect=fail_staged_install):
+                with self.assertRaisesRegex(OSError, "install failed"):
+                    install_import(
+                        root,
+                        make_ukso_request(),
+                        "Season Opener",
+                        field_path,
+                        rounds,
+                        replace_existing=True,
+                    )
+
+            self.assertEqual((target / "keep.txt").read_text(), "user data")
+            self.assertEqual(config_path.read_text(), original_config)

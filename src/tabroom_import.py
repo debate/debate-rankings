@@ -1,4 +1,9 @@
+import json
+import re
+import shutil
+import tempfile
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
@@ -27,6 +32,14 @@ class DownloadedRound:
     name: str
     path: Path
     data: pd.DataFrame | None = None
+
+
+@dataclass(frozen=True)
+class InstalledImport:
+    target: Path
+    format_name: str
+    entry_count: int
+    round_count: int
 
 
 def _clean_columns(frame: pd.DataFrame) -> pd.DataFrame:
@@ -131,3 +144,110 @@ def validate_request(request: ImportRequest) -> tuple[int, int, str]:
     ):
         raise ImportValidationError("slug must contain lowercase letters, numbers, and hyphens")
     return tournament_id, event_id, infer_format(request.event_name, request.format_override)
+
+
+def round_filename(round_item: DownloadedRound) -> str:
+    normalized = re.sub(r"[^a-z0-9]+", "-", round_item.name.lower()).strip("-")
+    return f"{round_item.ordinal:02d}-{normalized}-{round_item.round_id}.csv"
+
+
+def _metadata(
+    request: ImportRequest,
+    tournament_name: str,
+    tournament_id: int,
+    event_id: int,
+    format_name: str,
+    rounds: list[DownloadedRound],
+) -> dict:
+    return {
+        "tournament_name": tournament_name,
+        "tournament_url": request.tournament_url,
+        "tournament_id": tournament_id,
+        "event_name": request.event_name,
+        "event_url": request.event_url,
+        "event_id": event_id,
+        "format": format_name,
+        "slug": request.slug,
+        "imported_at": datetime.now(timezone.utc).isoformat(),
+        "rounds": [
+            {"ordinal": item.ordinal, "name": item.name, "round_id": item.round_id}
+            for item in rounds
+        ],
+    }
+
+
+def install_import(
+    project_root: Path,
+    request: ImportRequest,
+    tournament_name: str,
+    field_path: Path,
+    rounds: list[DownloadedRound],
+    replace_existing: bool = False,
+) -> InstalledImport:
+    tournament_id, event_id, format_name = validate_request(request)
+    entries = normalize_entries(field_path)
+    loaded_rounds = [
+        DownloadedRound(
+            item.ordinal,
+            item.round_id,
+            item.name,
+            item.path,
+            normalize_round(item.path),
+        )
+        for item in rounds
+    ]
+    validate_dataset(entries, loaded_rounds)
+
+    target = project_root / "tournaments" / format_name / request.slug
+    if target.exists() and not replace_existing:
+        raise FileExistsError(f"tournament slug already exists: {request.slug}")
+    config_path = project_root / "config" / f"{format_name}-config.json"
+    original_config_text = config_path.read_text()
+    config = json.loads(original_config_text)
+    if request.slug not in config["tournaments"]:
+        config["tournaments"].append(request.slug)
+
+    target.parent.mkdir(parents=True, exist_ok=True)
+    staging_parent = project_root / ".tabroom-import"
+    staging_parent.mkdir(exist_ok=True)
+    with tempfile.TemporaryDirectory(dir=staging_parent) as directory:
+        temporary_root = Path(directory)
+        staged = temporary_root / request.slug
+        backup = temporary_root / f"{request.slug}-backup"
+        staged.mkdir()
+        entries.to_csv(staged / "entries.csv", index=False)
+        for item in loaded_rounds:
+            item.data.to_csv(staged / round_filename(item), index=False)
+        (staged / "tabroom.json").write_text(
+            json.dumps(
+                _metadata(
+                    request,
+                    tournament_name,
+                    tournament_id,
+                    event_id,
+                    format_name,
+                    loaded_rounds,
+                ),
+                indent=2,
+            )
+            + "\n"
+        )
+
+        had_existing_target = target.exists()
+        try:
+            if had_existing_target:
+                target.replace(backup)
+            staged.replace(target)
+
+            temporary_config = config_path.with_suffix(".json.tmp")
+            temporary_config.write_text(json.dumps(config, indent=2) + "\n")
+            temporary_config.replace(config_path)
+        except Exception:
+            if target.exists():
+                shutil.rmtree(target)
+            if had_existing_target and backup.exists():
+                backup.replace(target)
+            config_path.write_text(original_config_text)
+            raise
+
+    return InstalledImport(target, format_name, len(entries), len(loaded_rounds))
