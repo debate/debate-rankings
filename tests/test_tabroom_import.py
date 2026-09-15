@@ -301,3 +301,64 @@ class InstallImportTest(unittest.TestCase):
 
             self.assertEqual((target / "keep.txt").read_text(), "user data")
             self.assertEqual(config_path.read_text(), original_config)
+
+    def test_refresh_keeps_original_target_when_backup_creation_fails(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config_path = root / "config" / "hsld-config.json"
+            config_path.parent.mkdir()
+            original_config = json.dumps({"tournaments": ["loyola"], "majors": [], "multi_team_debaters": []})
+            config_path.write_text(original_config)
+            target = root / "tournaments" / "hsld" / "ukso"
+            target.mkdir(parents=True)
+            (target / "keep.txt").write_text("user data")
+            field_path, rounds = make_valid_exports(root)
+            original_replace = Path.replace
+
+            def fail_backup_creation(source: Path, destination: Path):
+                if source == target and destination.name == "ukso-backup":
+                    raise OSError("backup failed")
+                return original_replace(source, destination)
+
+            with patch.object(Path, "replace", autospec=True, side_effect=fail_backup_creation):
+                with self.assertRaisesRegex(OSError, "backup failed"):
+                    install_import(
+                        root,
+                        make_ukso_request(),
+                        "Season Opener",
+                        field_path,
+                        rounds,
+                        replace_existing=True,
+                    )
+
+            self.assertEqual((target / "keep.txt").read_text(), "user data")
+            self.assertEqual(config_path.read_text(), original_config)
+
+    def test_refuses_slug_created_before_live_install_without_refresh(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config_path = root / "config" / "hsld-config.json"
+            config_path.parent.mkdir()
+            config_path.write_text(
+                json.dumps({"tournaments": ["loyola"], "majors": [], "multi_team_debaters": []})
+            )
+            target = root / "tournaments" / "hsld" / "ukso"
+            field_path, rounds = make_valid_exports(root)
+            original_exists = Path.exists
+            target_checks = 0
+
+            def create_competing_target(path: Path):
+                nonlocal target_checks
+                if path == target:
+                    target_checks += 1
+                    if target_checks == 2:
+                        target.mkdir()
+                        (target / "keep.txt").write_text("user data")
+                        return True
+                return original_exists(path)
+
+            with patch.object(Path, "exists", autospec=True, side_effect=create_competing_target):
+                with self.assertRaisesRegex(FileExistsError, "ukso"):
+                    install_import(root, make_ukso_request(), "Season Opener", field_path, rounds)
+
+            self.assertEqual((target / "keep.txt").read_text(), "user data")
