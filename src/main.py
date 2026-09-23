@@ -386,6 +386,11 @@ def main():
     cpd_ranking_system = RankingSystem(cpd_config_path, cpd_format_dir)
     cpd_ranking_system.run(f"{cpd_format_dir}_")
 
+    print(f"\nStarting CX ranking system")
+
+    cx_ranking_system = RankingSystem("config/hscx-config.json", "hscx")
+    cx_ranking_system.run("hscx_")
+
 
 if __name__ == "__main__":
     main()
