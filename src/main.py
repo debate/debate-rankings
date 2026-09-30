@@ -134,11 +134,18 @@ class RankingSystem:
 
         code_to_hash = {}
         for _, entry_row in teams.iterrows():
-            code = entry_row["Code"]
+            code = str(entry_row["Code"]).strip()
             hash = entry_row["hash"]
             code_to_hash[code] = hash
 
         return code_to_hash
+
+    @staticmethod
+    def _is_played_side(code) -> bool:
+        if pd.isna(code):
+            return False
+        normalized_code = str(code).strip().lower()
+        return normalized_code != "" and "bye" not in normalized_code
 
     def replace_codes_with_hashes(
         self, round_data: pd.DataFrame, tournament: str
@@ -146,8 +153,24 @@ class RankingSystem:
         """Replaces entry codes for a round with hashes, returning that as a DataFrame"""
         code_to_hash = self.create_code_to_hash_dict(tournament)
 
-        round_data["Aff"] = round_data["Aff"].map(code_to_hash)
-        round_data["Neg"] = round_data["Neg"].map(code_to_hash)
+        for side in ("Aff", "Neg"):
+            original_codes = round_data[side].copy()
+            normalized_codes = original_codes.map(
+                lambda code: str(code).strip() if self._is_played_side(code) else code
+            )
+            round_data[side] = normalized_codes.map(code_to_hash)
+            unmapped_codes = sorted(
+                {
+                    str(code).strip()
+                    for code, mapped in zip(original_codes, round_data[side])
+                    if self._is_played_side(code) and pd.isna(mapped)
+                }
+            )
+            if unmapped_codes:
+                raise ValueError(
+                    f"{tournament} has unmapped {side} entries: "
+                    + ", ".join(unmapped_codes)
+                )
 
         return round_data
 

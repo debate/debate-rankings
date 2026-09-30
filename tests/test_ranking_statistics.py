@@ -1,6 +1,7 @@
 import json
 import os
 import sys
+import shutil
 import tempfile
 import unittest
 from pathlib import Path
@@ -106,6 +107,75 @@ class RankingStatisticsTest(unittest.TestCase):
                 self.assertTrue(pd.isna(output.loc["Charlie", "Aff Elim Win Rate"]))
                 self.assertTrue(pd.isna(output.loc["Charlie", "Neg Elim Win Rate"]))
                 self.assertEqual(output.loc["Bob", "Neg Elim Win Rate"], 100.0)
+
+    def test_parses_kentucky_rr_entries_and_results(self):
+        repository_root = Path(__file__).resolve().parents[1]
+
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            tournament_root = root / "tournaments" / "cpd"
+            tournament_root.mkdir(parents=True)
+            shutil.copytree(
+                repository_root / "tournaments" / "cpd" / "kentucky-rr",
+                tournament_root / "kentucky-rr",
+                dirs_exist_ok=True,
+            )
+            (root / "output").mkdir()
+            (root / "config.json").write_text(
+                json.dumps(
+                    {
+                        "tournaments": ["kentucky-rr"],
+                        "majors": [],
+                        "multi_team_debaters": [],
+                    }
+                )
+            )
+
+            previous_directory = Path.cwd()
+            try:
+                os.chdir(root)
+                ranking_system = RankingSystem("config.json", "cpd")
+                ranking_system.update_from_tournament("kentucky-rr")
+            finally:
+                os.chdir(previous_directory)
+
+            self.assertEqual(len(ranking_system.debaters), 7)
+            self.assertEqual(
+                sorted(ranking_system.debaters["Code"].tolist()),
+                [
+                    "CSU Long Beach",
+                    "Dartmouth",
+                    "Emory",
+                    "Kansas",
+                    "Kentucky",
+                    "Michigan",
+                    "Michigan State",
+                ],
+            )
+            self.assertEqual(
+                sum(
+                    statistics["aff_rounds"] + statistics["neg_rounds"]
+                    for statistics in ranking_system.win_statistics.values()
+                ),
+                42,
+            )
+
+            kentucky_hash = ranking_system.debaters.set_index("Code").loc[
+                "Kentucky", "hash"
+            ]
+            self.assertEqual(
+                ranking_system.win_statistics[kentucky_hash],
+                {
+                    "aff_wins": 0,
+                    "aff_rounds": 3,
+                    "neg_wins": 0,
+                    "neg_rounds": 3,
+                    "aff_elim_wins": 0,
+                    "aff_elim_rounds": 0,
+                    "neg_elim_wins": 0,
+                    "neg_elim_rounds": 0,
+                },
+            )
 
 
 class TopicTournamentPartitionTest(unittest.TestCase):
