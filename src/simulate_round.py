@@ -1,7 +1,6 @@
 import sys
 
 import pandas as pd
-from skelo.model.glicko2 import Glicko2Model
 
 
 def main():
@@ -38,12 +37,9 @@ def main():
     debater_2_deviation = debater_2_row.iloc[0]["Deviation"]
     debater_2_school = debater_2_row.iloc[0]["School"]
 
-    # Initialize Glicko2 model and compute win probability
-    model = Glicko2Model()
-
-    # compute_prob expects rating tuples (mu, phi)
-    debater_1_win_prob = model.compute_prob(
-        (debater_1_rating, debater_1_deviation), (debater_2_rating, debater_2_deviation)
+    # Bradley-Terry win probability on the Elo-scaled ratings (side-neutral)
+    debater_1_win_prob = 1 / (
+        1 + 10 ** ((debater_2_rating - debater_1_rating) / 400)
     )
     debater_2_win_prob = 1 - debater_1_win_prob
 

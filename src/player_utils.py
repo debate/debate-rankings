@@ -94,16 +94,14 @@ def create_player_hashes(
 def parse_debaters_from_tournament(
     tournament: str,
     debaters: pd.DataFrame,
-    glicko_model,
     multi_team_debaters: list,
     format: str,
 ) -> pd.DataFrame:
-    """Adds tournament entries to debaters DataFrame and glicko model
+    """Adds tournament entries to debaters DataFrame
 
     Args:
         tournament: Tournament name
         debaters: DataFrame of existing debaters
-        glicko_model: Glicko2 model instance
         multi_team_debaters: List of debaters who compete for multiple teams
 
     Returns:
@@ -124,6 +122,5 @@ def parse_debaters_from_tournament(
 
         if not is_already_in_debaters:
             debaters = pd.concat([debaters, team_row.to_frame().T], ignore_index=True)
-            glicko_model.add(hash)
 
     return debaters

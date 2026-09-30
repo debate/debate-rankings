@@ -1,15 +1,23 @@
+import math
 import os
 
 import pandas as pd
-from skelo.model.glicko2 import Glicko2Model
+from fisher_scoring import BradleyTerry, pairs_from_counts
 
 from determine_tournament_weight import determine_weight
 from load_config import load_config
 from player_utils import create_player_hashes, parse_debaters_from_tournament
 
+# Ridge penalty on team skill (logit scale). 1.0 is a N(0, 1) prior: teams with
+# few ballots are pulled toward the field average and unbeaten teams stay finite.
+SKILL_PRIOR_PRECISION = 1.0
+# Report ratings on the familiar Elo scale: 400 points = 10:1 odds.
+RATING_BASE = 1500
+RATING_SCALE = 400 / math.log(10)
+
 
 class RankingSystem:
-    """Manages debate rankings using the Glicko2 rating system"""
+    """Manages debate rankings with a Bradley-Terry model fit to every ballot"""
 
     def __init__(self, config_path: str, format_dir: str = ""):
         """Initialize the ranking system with a config file
@@ -21,8 +29,8 @@ class RankingSystem:
         self.config = load_config(config_path)
         self.format_dir = format_dir
         self.debaters = pd.DataFrame()
-        self.glicko_model = Glicko2Model()
-        self.match_counter = 0
+        self.comparisons = []
+        self.aff_advantage = float("nan")
         self.win_statistics = {}
 
     @staticmethod
@@ -71,13 +79,25 @@ class RankingSystem:
             return float("nan")
         return round(100 * wins / rounds, 2)
 
+    @staticmethod
+    def _count_ballots(round_row, aff_won: bool) -> tuple[int, int]:
+        """Returns (aff ballots, neg ballots), using panel votes when present"""
+        votes = round_row.get("Votes")
+        if isinstance(votes, str):
+            tokens = votes.lower().split()
+            aff_ballots = sum(token in ("aff", "pro") for token in tokens)
+            neg_ballots = sum(token in ("neg", "con") for token in tokens)
+            if aff_ballots + neg_ballots > 0:
+                return aff_ballots, neg_ballots
+        return (1, 0) if aff_won else (0, 1)
+
     def run_round(self, tournament: str, round: str, weight: int = 1) -> None:
-        """Updates elos with wins and losses from a round
+        """Records ballots and win statistics from a round
 
         Args:
             tournament: tournament name
             round: round name
-            weight: how many times to process each match (1 for regular, 2 for majors)
+            weight: likelihood weight for this round's ballots (2 for majors)
         """
         tournament_path = (
             f"{self.format_dir}/{tournament}" if self.format_dir else tournament
@@ -88,9 +108,6 @@ class RankingSystem:
         round_data = round_data.rename(columns={"Pro": "Aff", "Con": "Neg"})
         is_elimination = self._is_elimination_round(round, round_data.columns)
         round_data = self.replace_codes_with_hashes(round_data, tournament)
-
-        # Use the same timestamp for all matches in this round to avoid recency bias
-        round_timestamp = self.match_counter
 
         for _, round_row in round_data.iterrows():
             aff_hash = str(round_row["Aff"])
@@ -112,16 +129,36 @@ class RankingSystem:
 
             self._record_result(aff_hash, "aff", aff_won, is_elimination)
             self._record_result(neg_hash, "neg", neg_won, is_elimination)
+            aff_ballots, neg_ballots = self._count_ballots(round_row, aff_won)
             # Tournament weight affects ratings, not the raw win-rate sample.
-            for _ in range(weight):
-                if aff_won:
-                    self.glicko_model.update(aff_hash, neg_hash, round_timestamp)
+            self.comparisons.append(
+                {
+                    "aff": aff_hash,
+                    "neg": neg_hash,
+                    "aff_ballots": aff_ballots * weight,
+                    "neg_ballots": neg_ballots * weight,
+                }
+            )
 
-                if neg_won:
-                    self.glicko_model.update(neg_hash, aff_hash, round_timestamp)
+    def _fit_skills(self) -> pd.DataFrame:
+        """Fits Bradley-Terry skills (logit scale) with an aff-side term to all ballots
 
-        # Only increment counter once per round, not per match
-        self.match_counter += 1
+        Returns:
+            DataFrame indexed by team hash with "ability" and "se" columns
+        """
+        if not self.comparisons:
+            return pd.DataFrame(columns=["ability", "se"])
+
+        comparisons = pd.DataFrame(self.comparisons)
+        X, y, sample_weight = pairs_from_counts(
+            comparisons, "aff", "neg", "aff_ballots", "neg_ballots"
+        )
+        model = BradleyTerry(use_bias=True, l2=SKILL_PRIOR_PRECISION)
+        model.fit(X, y, sample_weight=sample_weight)
+        self.aff_advantage = float(
+            model.summary_frame().loc["bias (order effect)", "estimate"]
+        )
+        return model.rank()
 
     def create_code_to_hash_dict(self, tournament: str) -> dict:
         """Creates a dictionary that maps entry codes to hashes"""
@@ -189,7 +226,6 @@ class RankingSystem:
         self.debaters = parse_debaters_from_tournament(
             tournament_path,
             self.debaters,
-            self.glicko_model,
             self.config.get("multi_team_debaters", []),
             self.format_dir,
         )
@@ -219,37 +255,40 @@ class RankingSystem:
         """
         print("Creating Rankings...")
 
+        skills = self._fit_skills()
+        # Teams without a decided round sit at the prior: field average, prior sd.
+        prior_se = SKILL_PRIOR_PRECISION**-0.5
+
         # Create rankings data
         rankings_data = []
         for index, debater in self.debaters.iterrows():
             hash = debater["hash"]
-            rating_data = self.glicko_model.get(hash)
-            # rating_data["rating"] is a tuple of (mu, phi, sigma)
-            mu = rating_data["rating"][0]  # Rating
-            phi = rating_data["rating"][1]  # Rating deviation (uncertainty)
-            sigma = rating_data["rating"][2]  # Volatility
+            if hash in skills.index:
+                ability, se = skills.loc[hash, ["ability", "se"]]
+            else:
+                ability, se = 0.0, prior_se
+            rating = RATING_BASE + RATING_SCALE * ability
+            deviation = RATING_SCALE * se
 
             statistics = self.win_statistics.get(hash, {})
             aff_rounds = statistics.get("aff_rounds", 0)
             neg_rounds = statistics.get("neg_rounds", 0)
             aff_elim_rounds = statistics.get("aff_elim_rounds", 0)
             neg_elim_rounds = statistics.get("neg_elim_rounds", 0)
-            # Count how many matches this debater has played
-            # This is a rough estimate based on rating history
-            match_count = len(self.glicko_model.ratings.get(hash, [])) - 1
+            match_count = aff_rounds + neg_rounds
 
             # Adjusted rating: Rating - 2*Deviation
             # This penalizes debaters with high uncertainty (few matches)
-            adjusted_rating = mu - 2 * phi
+            adjusted_rating = rating - 2 * deviation
 
             rankings_data.append(
                 {
                     "School": debater["Institution"],
                     "Name": debater["Entry"],
                     "Adjusted Rating": adjusted_rating,
-                    "Deviation": phi,
+                    "Deviation": deviation,
                     "Matches": match_count,
-                    "Rating": mu,
+                    "Rating": rating,
                     "Hash": debater["hash"],
                     "Aff Win Rate": self._win_rate(
                         statistics.get("aff_wins", 0), aff_rounds
@@ -301,6 +340,10 @@ class RankingSystem:
                     "Neg Elim Win Rate": self._win_rate(
                         field_totals["neg_elim_wins"],
                         field_totals["neg_elim_rounds"],
+                    ),
+                    # Rating points the aff side is worth, from the model's side term.
+                    "Aff Rating Advantage": round(
+                        RATING_SCALE * self.aff_advantage, 2
                     ),
                 }
             ]
