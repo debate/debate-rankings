@@ -1,126 +1,130 @@
-Institution,Location,Entry,Code,Mode,Status,Record
-Baylor,TX/US,Benton & Keeler,Baylor KB,1,,
-Baylor,TX/US,Merriwether & Krikorian,Baylor KM,1,,
-Baylor,TX/US,Mathews & Marek,Baylor MM,1,,
-Baylor,TX/US,Li & Phillips,Baylor PL,1,,
-Central Oklahoma,OK/US,Walker & Hellwege,Central Oklahoma WH,1,,
-CSU Long Beach,CA/US,Escobar & Medina,CSU Long Beach EM,0,,
-Dartmouth,NH/US,Ben-Abdallah & Carpenter,Dartmouth BC,0,,
-Dartmouth,NH/US,Park & Brody,Dartmouth BP,1,,
-Dartmouth,NH/US,Chen & Figueroa,Dartmouth CF,0,,
-Dartmouth,NH/US,Cai & Goldberg,Dartmouth CG,0,,
-Dartmouth,NH/US,Hatton & Hilario-Peralta,Dartmouth HH,0,,
-Dartmouth,NH/US,Rao & Song,Dartmouth SR,1,,
-Emory,GA/US,Aggarwal & Taylor,Emory AT,0,,
-Emory,GA/US,granchi & Wang,Emory GW,0,,
-Emory,GA/US,Hight & Tharp,Emory HT,0,,
-Emory,GA/US,Johnston & Shaeffer,Emory JS,0,,
-Emory,GA/US,Mansoor & Walsh,Emory MW,0,,
-Emory,GA/US,Okahata & Park,Emory OP,0,,
-Emory,GA/US,Ravikumar & Cross,Emory RC,0,,
-Emory,GA/US,Stumpff & Yang,Emory SY,0,,
-George Mason,VA/US,Bridgers & Gorman,George Mason BG,0,,
-George Mason,VA/US,Badmus & Noye,George Mason BN,0,,
-George Mason,VA/US,Davis & clough,George Mason CD,0,,
-George Mason,VA/US,Taxali & Rosa-Pérez Montes,George Mason RT,0,,
-George Mason,VA/US,Wright & Witkov,George Mason WW,0,,
-George Mason,VA/US,George Mason/Samford PA,George Mason/Samford PA,0,,
-Georgetown,DC/US,Barbiere & Perez-Rubio,Georgetown BP,0,,
-Georgetown,DC/US,Ciancanelli & Li,Georgetown CL,0,,
-Georgetown,DC/US,Greenberg & Tamfu,Georgetown GT,0,,
-Georgetown,DC/US,Lastelick & Nanji,Georgetown LN,0,,
-Georgetown,DC/US,Xiao & Molina-Jimenez,Georgetown MX,0,,
-Georgia,GA/US,Cannon & Pack,Georgia CP,0,,
-Gonzaga,WA/US,Gibson & Atkin,Gonzaga GA,0,,
-Gonzaga,WA/US,Murray & Pascas,Gonzaga MP,0,,
-Harvard,MA/US,Aoki & Bodet,Harvard AB,0,,
-Harvard,MA/US,Gheith & Gupta,Harvard GG,0,,
-Harvard,MA/US,Jin & Ohr,Harvard JO,0,,
-Harvard,MA/US,Li & Howard,Harvard LH,0,,
-Harvard,MA/US,Merges & Vaghaiwalla,Harvard MV,0,,
-Harvard,MA/US,Facey & Jones,Harvard/Boston University FJ,0,,
-Houston,TX/US,Fernandez & Ibarra,Houston FI,0,,
-Houston,TX/US,Macasaet & Roberts,Houston MR,0,,
-Indiana,IN/US,Duggal & Jones,Indiana DJ,0,,
-Indiana,IN/US,Truemper & Fish,Indiana TF,0,,
-Iowa,IA/US,Bilicki & Severson,Iowa BS,0,,
-Iowa,IA/US,Eltyeb & Weimar,Iowa EW,0,,
-Iowa,IA/US,Kleiman & Parfenoff,Iowa KP,0,,
-Iowa,IA/US,Larsen & Dillon,Iowa/Western Kentucky LD,0,,
-Kansas,KS/US,Adedipe & Verma,Kansas AV,0,,
-Kansas,KS/US,Bath & Boyle,Kansas BB,0,,
-Kansas,KS/US,Blaser & Falin,Kansas BF,0,,
-Kansas,KS/US,Bauman & Levin,Kansas BL,0,,
-Kansas,KS/US,Brown & Suleman,Kansas BS,0,,
-Kansas,KS/US,Fordyce & Hasiuk,Kansas FH,1,,
-Kansas,KS/US,Home & Jijo,Kansas HJ,0,,
-Kansas,KS/US,Pace & LaPoint,Kansas PL,0,,
-Kansas,KS/US,Suleman & Shaw,Kansas SS,0,,
-Kansas,KS/US,Terreros & Baxter-Kauf,Kansas TB,0,,
-Kansas,KS/US,Ulven & Owings,Kansas UO,0,,
-Kansas,KS/US,Walawender & Ain,Kansas WA,0,,
-Kentucky,KY/US,Coale & Slish,Kentucky CS,0,,
-Kentucky,KY/US,Ervin & Marcos,Kentucky EM,0,,
-Kentucky,KY/US,Schedler & Rimpson,Kentucky RS,0,,
-Liberty,VA/US,Cunningham & Layton,Liberty CL,0,,
-Liberty,VA/US,Etienne & Tooley,Liberty ET,0,,
-Liberty,VA/US,Koenig & Ronchetti,Liberty KR,0,,
-Liberty,VA/US,Soares & Spencer,Liberty SS,0,,
-Michigan,MI/US,Almand & Chalamalasetti,Michigan AC,0,,
-Michigan,MI/US,Athanassiou & Davidov,Michigan AD,0,,
-Michigan,MI/US,Agustin & Ou,Michigan AO,0,,
-Michigan,MI/US,Byron-Smarra & Brashear,Michigan BB,0,,
-Michigan,MI/US,Barrett & Song,Michigan BS,0,,
-Michigan,MI/US,Chamarthy & Shetty,Michigan CS,0,,
-Michigan,MI/US,Chun & Xu,Michigan CX,1,,
-Michigan,MI/US,Esmailzadeh & Shah,Michigan ES,0,,
-Michigan,MI/US,Furtek & Pazona,Michigan FP,0,,
-Michigan,MI/US,George & Vadathavoor,Michigan GV,0,,
-Michigan State,MI/US,Buhl & sterbenc,Michigan State BS,0,,
-Michigan State,MI/US,Jarman & Shehzad,Michigan State JS,0,,
-Michigan State,MI/US,Kincaid & Patel,Michigan State KP,0,,
-Michigan State,MI/US,Lewis & Martin,Michigan State LM,0,,
-Minnesota,MN/US,Munson & Nager,Minnesota MN,0,,
-Minnesota,MN/US,Usenov & Wells,Minnesota UW,0,,
-MoState,MO/US,Cowdrey-Mota & Rice,MoState CR,0,,
-MoState,MO/US,DeAngelis & Siever,MoState DS,0,,
-MoState,MO/US,Neal & Neal,MoState NN,0,,
-Navy,MD/US,Lawrence & Satterfield,Navy LS,0,,
-Northwestern,IL/US,Arceo & Young,Northwestern AY,0,,
-Northwestern,IL/US,Canchola-Plascencia & Chan,Northwestern CC,0,,
-Northwestern,IL/US,Camp & Yao,Northwestern CY,0,,
-Northwestern,IL/US,Heftman & Peltier,Northwestern HP,0,,
-Northwestern,IL/US,Jayaratne & Patterson,Northwestern JP,0,,
-Northwestern,IL/US,Kung & Miramontes,Northwestern KM,0,,
-Northwestern,IL/US,Leonard & Peng,Northwestern LP,0,,
-Northwestern,IL/US,Li & Tahirkheli,Northwestern LT,0,,
-Northwestern,IL/US,Lundberg & Weisz,Northwestern LW,0,,
-Oklahoma,OK/US,Bustos & prather,Oklahoma BP,0,,
-Oklahoma,OK/US,Ballinger & Wright,Oklahoma BW,0,,
-Oklahoma,OK/US,Smith & Werner,Oklahoma SW,0,,
-Southern California,CA/US,Bradley & Martin,Southern California BM,0,,
-Southern California,CA/US,Lee & Plotkin,Southern California LP,0,,
-Southern California,CA/US,Mills & Troup,Southern California MT,0,,
-Texas,TX/US,Low & Ali,Texas AL,1,,
-Texas,TX/US,Banse & Small,Texas BS,1,,
-Texas,TX/US,Gade & Braziel,Texas GB,1,,
-Texas,TX/US,Stevenson & Garza,Texas GS,1,,
-UC Berkeley,CA/US,Boguslavsky & Modi,UC Berkeley BM,0,,
-UC Berkeley,CA/US,Situ & Gilrain-Lennon,UC Berkeley GS,1,,
-Harvard,MA/US,Levitan & Moussavou,UMass Amherst LM,0,,
-UTD,TX/US,Hale & Dickey,UTD DH,1,,
-Wake Forest,NC/US,Aderibigbe & Mbye,Wake Forest AM,0,,
-Wake Forest,NC/US,Brown & Sencion,Wake Forest BS,0,,
-Wake Forest,NC/US,Leverett & Patel,Wake Forest LP,0,,
-Wake Forest,NC/US,Laforest & Williams,Wake Forest LW,0,,
-Wake Forest,NC/US,McDonald & Prabhakar,Wake Forest MP,0,,
-Wake Forest,NC/US,Sampat & Nounawon-Castro,Wake Forest NS,0,,
-Wake Forest,NC/US,Timsah & Nguyen,Wake Forest TN,0,,
-West Georgia,GA/US,Kennon & Missell,West Georgia KM,0,,
-Western Kentucky,KY/US,Carter & Schintgen,Western Kentucky CS,0,,
-Western Kentucky,KY/US,Hendrix & Mike,Western Kentucky HM,0,,
-Western Kentucky,KY/US,Ingram & Niendorf,Western Kentucky IN,0,,
-Western Kentucky,KY/US,Kumar & Ney,Western Kentucky KN,0,,
-Wichita State,KS/US,Griffith & Mallett,Wichita State GM,1,,
-Wichita State,KS/US,Marciano & Zdrojewski,Wichita State ZM,1,,
-Wyoming,WY/US,Hawley & Widi,Wyoming HW,1,,
+Institution,Location,Entry,Code,Mode,Status,Record,hash
+Baylor,TX/US,Benton & Keeler,Baylor KB,1.0,,,18ed9c867c539ae83f82c3eac3825d5205c71926404150d4cedaa4f3fd3c2280
+Baylor,TX/US,Krikorian & Merriwether,Baylor KM,1.0,,,229a68942476118256d1df5509b9c569a53b727fa16c9c5bbe87b8e9543cc49d
+Baylor,TX/US,Marek & Mathews,Baylor MM,1.0,,,fb9222435d2ba68fa8baf50ded173e26a6130498dede2aa65a8d63859fa7d31d
+Baylor,TX/US,Li & Phillips,Baylor PL,1.0,,,7b9079c7e19090355cd246855d5721caa86dc3693bcc2fb1b2d05c70606b502b
+Central Oklahoma,OK/US,Hellwege & Walker,Central Oklahoma WH,1.0,,,9fafa44453b0904c92ddb47cf4166de1eace09ac9261788ef44f5a4e80b6dab1
+CSU Long Beach,CA/US,Escobar & Medina,CSU Long Beach EM,0.0,,,dbb326937eff67e3efecb73e313b21006aa58a7be1fd5cbb2d17cabd502bf58e
+Dartmouth,NH/US,Ben-Abdallah & Carpenter,Dartmouth BC,0.0,,,7194536a4699743c7b7c4d12c07c5f2d79ac112cb9864824dd73bd3be588d555
+Dartmouth,NH/US,Brody & Park,Dartmouth BP,1.0,,,7cd26ea63489e7b984b3f38e3378b8ce9c5895a1469a0c0463239741bcd12f74
+Dartmouth,NH/US,Chen & Figueroa,Dartmouth CF,0.0,,,30c2abb0dc4f0e2f76948292021fe6b9bb54e26d003ef592c81c3b49c9d59fad
+Dartmouth,NH/US,Cai & Goldberg,Dartmouth CG,0.0,,,c3b09b39ea0f295007bce36a875d56f7e8bcbddefe36dcf60c96d57b58f9c040
+Dartmouth,NH/US,Hatton & Hilario-Peralta,Dartmouth HH,0.0,,,593d83b227057c3f8414dde6dfa83b5afbb769cb5890cb70ba54b6c7da34def6
+Dartmouth,NH/US,Rao & Song,Dartmouth SR,1.0,,,acc944e2a16db657d635b3b29d82d81a114e216a6cb0e9597ff90ec996ccf4b9
+Emory,GA/US,Aggarwal & Taylor,Emory AT,0.0,,,4c98b6fb2ec16946c1eeddd19e8fe96b7784f3890630843a1ac355fd4f848a9c
+Emory,GA/US,Granchi & Wang,Emory GW,0.0,,,f5357b8636b192c256b3129ba4e006ad5b33e3775bd54a74ebc806e870b5ea80
+Emory,GA/US,Hight & Tharp,Emory HT,0.0,,,6db106291d60ba6518c0d3294db6c5808d2bdbf7a96b202543cda2a845e46f9d
+Emory,GA/US,Johnston & Shaeffer,Emory JS,0.0,,,0f7308c4edb87782e944dd5a9ed4b40d16f8f603c524c5c1c8b4a062920cde8a
+Emory,GA/US,Mansoor & Walsh,Emory MW,0.0,,,54aaa935161ebc94c720a3da49039c9c7f0b1e1d535d1b976511313a9daaf839
+Emory,GA/US,Okahata & Park,Emory OP,0.0,,,e056130b54487e25fb277ca91e5cde6d6e649c1c5c120c6152ab78e909c96a92
+Emory,GA/US,Cross & Ravikumar,Emory RC,0.0,,,93d5bc25da73a0dd8b029765a7e1506b197059a5ccb05d8c97b969c739dae80e
+Emory,GA/US,Stumpff & Yang,Emory SY,0.0,,,94d0dd7b84da379b972397a7c7787cce590dfb2f6d1a900274dde63978c60f88
+George Mason,VA/US,Bridgers & Gorman,George Mason BG,0.0,,,379b3f045990a225b06ae765a0c14bf905c420ab8b413db39b865d2232e395cd
+George Mason,VA/US,Badmus & Noye,George Mason BN,0.0,,,51a0ad801bfa50aa34db9e5eefb5bece9de4de056ccf4e9173faa6213bfe26aa
+George Mason,VA/US,Clough & Davis,George Mason CD,0.0,,,d5db465337992d597e0256350e7d7194eaa1833ba4cadfbadb73740e2fbdc08b
+George Mason,VA/US,Rosa-Pérez Montes & Taxali,George Mason RT,0.0,,,8a834cde7f1be16f97a8ca8e9b583b847cee6225da09c2fe1c1b8abc450c2479
+George Mason,VA/US,Witkov & Wright,George Mason WW,0.0,,,01b4a037e94c64e63f46c63bf6d1e23ef6e4702d89288735b0ad86fc6c28383c
+George Mason,VA/US,George Mason/Samford PA,George Mason/Samford PA,0.0,,,2563bda942307e3b5c1d2d5c71cb5e250bbaf99ed65c73456f2d2023dfca28f2
+Georgetown,DC/US,Barbiere & Perez-Rubio,Georgetown BP,0.0,,,faafeb96d5709dbf81a89a30012af992e26ef04726e9dd8aa8a9f5b5d1bb9082
+Georgetown,DC/US,Ciancanelli & Li,Georgetown CL,0.0,,,77ab020c0d37ee6e22eb011a64aff2ed810d3be1dcabd459e7211539f15f710f
+Georgetown,DC/US,Greenberg & Tamfu,Georgetown GT,0.0,,,27d662cc1669b0a2712c53a45d72c9f6e5401fc1516a04f7454bb03f9c52a838
+Georgetown,DC/US,Lastelick & Nanji,Georgetown LN,0.0,,,de22fee965f9ca3f7c089124687ffce776fd5e89441afee151550c16f72b7ef7
+Georgetown,DC/US,Molina-Jimenez & Xiao,Georgetown MX,0.0,,,7a33431d53b5a58998963f1fd4e30e1cf2fbba292236e0149f8fac335b9cef8d
+Georgia,GA/US,Cannon & Pack,Georgia CP,0.0,,,a859963999d97266a763f3801281bc5cd3cc18941449ed0330ca369fc6ea13d8
+Gonzaga,WA/US,Atkin & Gibson,Gonzaga GA,0.0,,,20bf37d866da7e5e75e63ee1c64824f5bc70322dea65019139b6b90cd4a09c78
+Gonzaga,WA/US,Murray & Pascas,Gonzaga MP,0.0,,,15a96da80172cd981662e75d2061b20587edade71b9bfdabc39764eb1330e749
+Harvard,MA/US,Aoki & Bodet,Harvard AB,0.0,,,713d109d4f145c8231a2603e99eaf83c065e6b6b788dbb79efdf44e7e7df57b6
+Harvard,MA/US,Gheith & Gupta,Harvard GG,0.0,,,d78ddada8f617e45d20a82ef840571c730316fb15dae80d1177e998ddef07ca5
+Harvard,MA/US,Jin & Ohr,Harvard JO,0.0,,,37a4bff68cc568b412430c653ae63c908008bb15b4b229ba5db9b58f7cbad843
+Harvard,MA/US,Howard & Li,Harvard LH,0.0,,,352b20d7cd04b3691266057613e8664becfa0179d2a85aeef82d1b6c913c85fa
+Harvard,MA/US,Merges & Vaghaiwalla,Harvard MV,0.0,,,37d529308287540ec43901b5ebbf98cf455a087b03679d41d7ee80883f4d6eba
+Harvard,MA/US,Facey & Jones,Harvard/Boston University FJ,0.0,,,f278ec4927ddde948a4f8444130769821c30e059eb36f9423b5d2f12da924918
+Houston,TX/US,Fernandez & Ibarra,Houston FI,0.0,,,d235db768d14aa329f1a37dc64c210ff64b9b48784eb6722e1201c9e52ef83c3
+Houston,TX/US,Macasaet & Roberts,Houston MR,0.0,,,680edfac2152c6accf5df4cab1d8d980dc5c91f2e2f4b4dad0613b2776a56f76
+Indiana,IN/US,Duggal & Jones,Indiana DJ,0.0,,,c4d15daf4fcd02e52fc45d6bd744a0bb0b814130f3d577fdfdb8113fc8f4fe1d
+Indiana,IN/US,Fish & Truemper,Indiana TF,0.0,,,523398fee3c47263deb3c956dd05b15d650c3df156b872a84ed45ddb06345cf1
+Iowa,IA/US,Bilicki & Severson,Iowa BS,0.0,,,bd05759ba7948461ed19bfc266e28f973914e39b5f69df4e189f3e18d44a93fb
+Iowa,IA/US,Eltyeb & Weimar,Iowa EW,0.0,,,8f0a5eedb91fc91f604ca7bb87cd9025bf5cd2a165a09be5086dd1dfd821e541
+Iowa,IA/US,Kleiman & Parfenoff,Iowa KP,0.0,,,fde49cb191fc0fc592135f5c1fe09a63e1972bb8a4605d378e9bd958bae42df5
+Iowa,IA/US,Dillon & Larsen,Iowa/Western Kentucky LD,0.0,,,615e415888bc7c74f60f7d8613237a91217745c9d347417f373ef127ea0f4602
+Kansas,KS/US,Adedipe & Verma,Kansas AV,0.0,,,1ee6426434ffa35aa0b1eb40dadb2a7c8f1fd760a5594ffe062144d23ff15cbf
+Kansas,KS/US,Bath & Boyle,Kansas BB,0.0,,,c283d4fecd9b2c14f3056238b400e5be51e968eb92eed48e086d85cf20b778ba
+Kansas,KS/US,Blaser & Falin,Kansas BF,0.0,,,8bb78e05c4acf9e3fb78e4b5d54a303e44bc7ae571b15eca13e1abb6a49cfa94
+Kansas,KS/US,Bauman & Levin,Kansas BL,0.0,,,351d8e8bddd85c8831d80ec4b553ed8ca2f53a053e98f63f83fa62e89a129347
+Kansas,KS/US,Brown & Suleman,Kansas BS,0.0,,,b29df009ef64a05e69a9ade5fa37f60d4985be1b4434d757a05484a5bb702a07
+Kansas,KS/US,Fordyce & Hasiuk,Kansas FH,1.0,,,9bd839b4d62c77eec9876b4d0638abf600ff99929e435267659c1d2f6b369ea7
+Kansas,KS/US,Home & Jijo,Kansas HJ,0.0,,,0456ae07117ae81e3db550f668090616072fdce16a8764aefe60872e51cae49e
+Kansas,KS/US,LaPoint & Pace,Kansas PL,0.0,,,c7aa55ccc04d60ad54e4ca8c8b7b193476f58a804c1ad5a11e664f16e7458457
+Kansas,KS/US,Shaw & Suleman,Kansas SS,0.0,,,73aab860d534f982fe0d810a1ef77325aa9a2784429f86fba1211fa630aef85b
+Kansas,KS/US,Baxter-Kauf & Terreros,Kansas TB,0.0,,,a9882203cb9c3561634ab38f61bec4edcd857d881e5851adaaca0f36f304562e
+Kansas,KS/US,Owings & Ulven,Kansas UO,0.0,,,5bae0be1877d69abf9530aee0b889643c969932fa9b06ba04259953c66e28ec0
+Kansas,KS/US,Ain & Walawender,Kansas WA,0.0,,,9123a81cd9633027715cf46e9a44b4c9b081bd5dbfd9e5b4f84fa69b9d0af127
+Kentucky,KY/US,Coale & Slish,Kentucky CS,0.0,,,b8bb8bcccb3e702e5c5615cbd3e83dee425d7941cfa29e051a98173fc95af5ec
+Kentucky,KY/US,Ervin & Marcos,Kentucky EM,0.0,,,b2afffe0dc5c06ab5097d960980dc89216a3f3fd720d15e5ba21faeb4ea4b9f8
+Kentucky,KY/US,Rimpson & Schedler,Kentucky RS,0.0,,,d6177aa0817fc43cd7b34acaf95158f5d49ed0570b0c7d7c2b1b7c2873f4f0c7
+Liberty,VA/US,Cunningham & Layton,Liberty CL,0.0,,,5b44f9f319086163cad421a066d023e1132a9114298f6d423891a133f490a1a9
+Liberty,VA/US,Etienne & Tooley,Liberty ET,0.0,,,90f73082466e7213872002a7d71bc1d76aa9634bece99fd66dc993fd118359ca
+Liberty,VA/US,Koenig & Ronchetti,Liberty KR,0.0,,,1ac2ca50fb020b0ecbd398fed1d01cdb8701fa6e4873662e0ef3f8b775df14b5
+Liberty,VA/US,Soares & Spencer,Liberty SS,0.0,,,6b4a3eba752977e6422125dc6346b61f977b040741ff6c44af0094ef3918f364
+Michigan,MI/US,Almand & Chalamalasetti,Michigan AC,0.0,,,a38de689a75bf87cd688ac956b77028aacd056b44a3b37d2ea11571e712d4990
+Michigan,MI/US,Athanassiou & Davidov,Michigan AD,0.0,,,7febb0727dd301fb865557da81cc14981fe4c840713b2577f3713001e8633379
+Michigan,MI/US,Agustin & Ou,Michigan AO,0.0,,,9f8fd3f756e41c3393a18840f8cb3a529dc844a1bb7cfe79e8730152c2b746db
+Michigan,MI/US,Brashear & Byron-Smarra,Michigan BB,0.0,,,304150e0e21da2f226818e33a00a3ce5f22ad9334cb1b156276d8e8d400df34b
+Michigan,MI/US,Barrett & Song,Michigan BS,0.0,,,c3787a1ca67069fcbb3cddbd8714153034713e608481f20254215991c8f47f19
+Michigan,MI/US,Chamarthy & Shetty,Michigan CS,0.0,,,a3d290ea51b54b61072e38904a551fb6e1535737548bc843bcf3faa4297573d3
+Michigan,MI/US,Chun & Xu,Michigan CX,1.0,,,cf62be4885f6f86cf06c28cdd4d5c00f1485c11800e92c66ca67ba131776d4ac
+Michigan,MI/US,Esmailzadeh & Shah,Michigan ES,0.0,,,b5d3bc36bb49790dfeaacc1e5ad0f5ab9e7eb460e5d8d1166f046cff8aa7cd0e
+Michigan,MI/US,Furtek & Pazona,Michigan FP,0.0,,,8434a7a3ae48c2453dc1d528a07e8818592371307abb1a783bc224f97bbcabbc
+Michigan,MI/US,George & Vadathavoor,Michigan GV,0.0,,,d63ac3b8cda71f05121942017f12a232f0877f0a9357ba2fd9448fb1751cc463
+Michigan State,MI/US,Buhl & Sterbenc,Michigan State BS,0.0,,,eebbc9002acaf58a6b7416c97daa8f1e23868ddf5e6991a7586b1df293437347
+Michigan State,MI/US,Jarman & Shehzad,Michigan State JS,0.0,,,246931b0bce9f41f9dad0b9a0e0da162a413b5982067c6a2b2269d942c137d25
+Michigan State,MI/US,Kincaid & Patel,Michigan State KP,0.0,,,badd1c0084951994c0aa685fb567290af91d94029bb583a934ac7e532dc28ac2
+Michigan State,MI/US,Lewis & Martin,Michigan State LM,0.0,,,b308254c8fe3acd3f51299f70e02cb27abb2f6e598b080b1709da0da7b98f6d6
+Minnesota,MN/US,Munson & Nager,Minnesota MN,0.0,,,c7ec2e7b02a124a6ce60c7ec7d70c92a902f7ec4ffcce9dcd17df3241b5547c0
+Minnesota,MN/US,Usenov & Wells,Minnesota UW,0.0,,,bed33282acffaaedb95b6cd30a7c3dd929ab21b200bb2ec01ef93e2aa593d156
+MoState,MO/US,Cowdrey-Mota & Rice,MoState CR,0.0,,,7af9c5514bd19925f053fe95ae53143aaf5f539796118216a880b27d2de475b9
+MoState,MO/US,DeAngelis & Siever,MoState DS,0.0,,,80add2cf44e633fe0fd881b6a7543d6bb80d4d97687427be5855c2df88277739
+MoState,MO/US,Neal & Neal,MoState NN,0.0,,,a463db0e8b2c2a115f2dec3a284cba82a172baa7c1e0a6a6d9a3d17af804327a
+Navy,MD/US,Lawrence & Satterfield,Navy LS,0.0,,,c919581e493d7fea0a1842a282ff640d601404368540af72487efdfa8958f798
+Northwestern,IL/US,Arceo & Young,Northwestern AY,0.0,,,0d39a8a797ab7ec3749563a79edf53a0f008a235986b16fe3a9978329d059023
+Northwestern,IL/US,Canchola-Plascencia & Chan,Northwestern CC,0.0,,,0d8a5dab95ea13bf9ac9202e0d23fe2708c3fc61fba2a8215b49b951ece48813
+Northwestern,IL/US,Camp & Yao,Northwestern CY,0.0,,,9d64bcd36a1324bf89ea3ec0ab1ebc2a171bef7e3d3c293bc9be64b04047e494
+Northwestern,IL/US,Heftman & Peltier,Northwestern HP,0.0,,,dc68d7ec3dfe64b91245e6a78dfdf30a0d19f2e515c550f066d1e29e472cfa02
+Northwestern,IL/US,Jayaratne & Patterson,Northwestern JP,0.0,,,56b70403eae8401494db4c23db29103e4c5da66fb5dbad2b0a9a52bcc88fd53c
+Northwestern,IL/US,Kung & Miramontes,Northwestern KM,0.0,,,c86313df545177ed9a4e91a82496b6bca9531a1b22c5da08f8963a982fb4345a
+Northwestern,IL/US,Leonard & Peng,Northwestern LP,0.0,,,dc6e8603caafa8052c9887d5b36f8c89197941a6bb94e908440a36fa77ed2f70
+Northwestern,IL/US,Li & Tahirkheli,Northwestern LT,0.0,,,072386556a4c58eb15673a8d62c1f4b2777e84bd18eb4572b4dba88db4f00d99
+Northwestern,IL/US,Lundberg & Weisz,Northwestern LW,0.0,,,0edcb4b16b8adb20b84c5e454f2a324f5a35cd18268828c1e14c4be0690c09a8
+Oklahoma,OK/US,Bustos & Prather,Oklahoma BP,0.0,,,9bbe3ed761d01eb46b2da7ff3f3144853d50d4ba82ac11656a7a2ad31445624a
+Oklahoma,OK/US,Ballinger & Wright,Oklahoma BW,0.0,,,e018bbf0979d4a9289ff429311f125dd0c6d9aa26c7366dd146d00d7d52412e9
+Oklahoma,OK/US,Smith & Werner,Oklahoma SW,0.0,,,3e32805f81ac91565a9b369dca7fe08b3866c01ff8b65e95ea6f6bebad79b4c6
+Southern California,CA/US,Bradley & Martin,Southern California BM,0.0,,,601039c3abf51a32f01c659d8010da45c995fb822f9ba6f421748e8b75a6c4a8
+Southern California,CA/US,Lee & Plotkin,Southern California LP,0.0,,,326f453f627111bcbba7a1835359e91b9356eb247107302965c10b18805b8854
+Southern California,CA/US,Mills & Troup,Southern California MT,0.0,,,8e3b45f9ea479920eaf33c93dd1cdd0b6faede5b2cd66d6b2a319af26013a7f7
+Texas,TX/US,Ali & Low,Texas AL,1.0,,,12224c596321be10a8e5531b1caca0ab871d9dd66922733349b2c1c718636cda
+Texas,TX/US,Banse & Small,Texas BS,1.0,,,46535d6d708abb31aac99efd102c4e0528bf532277842ba46d6ef488202646c9
+Texas,TX/US,Braziel & Gade,Texas GB,1.0,,,28f50d911c68dfe93a3bf5326a5c89536024e872722897805c4142ce10f4e1a4
+Texas,TX/US,Garza & Stevenson,Texas GS,1.0,,,a2e0fe3893df3689beb2ff09ca17e57792e264235da3abb5b72b7b410ebd10f5
+UC Berkeley,CA/US,Boguslavsky & Modi,UC Berkeley BM,0.0,,,84862167383c5927df26898871acaba203d48064fbed0337d4f9740a1ba9da33
+UC Berkeley,CA/US,Gilrain-Lennon & Situ,UC Berkeley GS,1.0,,,91da3fb46c024cec610795b4521a650eeac61f2a0ca2d4559ef722695170ff5a
+Harvard,MA/US,Levitan & Moussavou,UMass Amherst LM,0.0,,,7cc6d6eddeeba0d40c8cbf32b57579e3a31116ed5928b2e659a6fe4cf765027b
+UTD,TX/US,Dickey & Hale,UTD DH,1.0,,,387c36971e4d7e4ad1d4ce41c316773a0c75a1faba1c5b5c3e6552b8f63c28ef
+Wake Forest,NC/US,Aderibigbe & Mbye,Wake Forest AM,0.0,,,1518dd00dd53fc4f222fe639c45a2fff2e7a5fa171fa94c3500976f250b25f92
+Wake Forest,NC/US,Brown & Sencion,Wake Forest BS,0.0,,,e60070bf2f748d2955efe47d15efde5b533d1e7cd9e32ad03849972138a2fd63
+Wake Forest,NC/US,Leverett & Patel,Wake Forest LP,0.0,,,ae663754b42264edb37753153d967247675d7844e56f9127aadeefadc4491fb6
+Wake Forest,NC/US,Laforest & Williams,Wake Forest LW,0.0,,,7efe89a4a28ff583ff10f60c278987b6a2be4b0580825f7a677f93866296f83a
+Wake Forest,NC/US,McDonald & Prabhakar,Wake Forest MP,0.0,,,e82244737982d1e0d06dfaea5cba01b4089372c1cbca50d3c695117407cc6579
+Wake Forest,NC/US,Nounawon-Castro & Sampat,Wake Forest NS,0.0,,,3e328accf7e9c997afc91fd878d3443e87b64a1425a7b067ce730f7e8a297b8e
+Wake Forest,NC/US,Nguyen & Timsah,Wake Forest TN,0.0,,,6e10ee3e6de00b9dcc87a2920831138fe60f5874976b073555f9e82959c19ee1
+West Georgia,GA/US,Kennon & Missell,West Georgia KM,0.0,,,4baf69e0fcb65aa6ec6951ea6b1bfd905a27131c5b4a26c52306a6553ac66c45
+Western Kentucky,KY/US,Carter & Schintgen,Western Kentucky CS,0.0,,,744560f8c33e0d0a448632a483977ebac5227fa0824d4430a1534de3d2df9854
+Western Kentucky,KY/US,Hendrix & Mike,Western Kentucky HM,0.0,,,bd2f570e474c9d1f8473dda5283e527513db40c416f698ff47ba972919c4661a
+Western Kentucky,KY/US,Ingram & Niendorf,Western Kentucky IN,0.0,,,e949fafa574173561a82e802d5fb8acae771828af63e280add19d803f6323196
+Western Kentucky,KY/US,Kumar & Ney,Western Kentucky KN,0.0,,,686cf02f82ed2b96cacb723f2eb9f75f92dd197137c572aa54c7cbf425eaf444
+Wichita State,KS/US,Griffith & Mallett,Wichita State GM,1.0,,,0aacc3112fc05221ea600a61bba1d078265903450c910fe9c3796e6aec48a92e
+Wichita State,KS/US,Marciano & Zdrojewski,Wichita State ZM,1.0,,,49912fac017f6cd75205d8280dc2ae1b0e75e2dae4d9bf26bc64c28e566fb099
+Wyoming,WY/US,Hawley & Widi,Wyoming HW,1.0,,,8e4f451f983f8be785955dff4dfc5ef4b9e1092290e76d195a5e218d5ddfd7a0
+Michigan State,MI/US,Foster & Morris,Michigan State FM,,,,c218165f46f74f034f289a99bbaa833835bc281d889857eae258150124f08a21
+Wake Forest,NC/US,Hale & Namikas,Wake Forest HN,,,,70c31a627e475b5abc94e67355295b2cab92c3e908c64e03694b3e99e38db5aa
+Emory,GA/US,Gallagher & Young,Emory GY,,,,cb534e768c9b2946eca1e5f56e3b04e893e4194ee809095e1c188868222315a3
+West Georgia,GA/US,Handley & Lovering,West Georgia HL,,,,ffea6b93a97f97935bf70b1f13930475a4f4a42421c95e6559ab7441e2e5bfed

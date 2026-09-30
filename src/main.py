@@ -167,9 +167,15 @@ class RankingSystem:
                 }
             )
             if unmapped_codes:
+                # Tabroom's entry export omits entries that dropped mid-tournament,
+                # but their rounds remain in the round CSVs.
                 raise ValueError(
                     f"{tournament} has unmapped {side} entries: "
                     + ", ".join(unmapped_codes)
+                    + ". Likely dropped entries missing from Tabroom's entry export;"
+                    " add Institution,Location,Entry,Code rows for them to "
+                    f"./tournaments/{self.format_dir + '/' if self.format_dir else ''}"
+                    f"{tournament}/entries.csv"
                 )
 
         return round_data
