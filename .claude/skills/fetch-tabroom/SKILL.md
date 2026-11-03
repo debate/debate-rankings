@@ -1,12 +1,17 @@
 ---
 name: fetch-tabroom
-description: Download a tournament's entries list and every round's results CSV from Tabroom (via Claude in Chrome) into tournaments/<format>/<slug>/ and register it in the config. Use when the user asks to add, fetch, or pull a tournament from Tabroom.
+description: Download a tournament's entries list and every round's results CSV from Tabroom (via the built-in Claude browser) into tournaments/<format>/<slug>/ and register it in the config. Use when the user asks to add, fetch, or pull a tournament from Tabroom.
 ---
 
 # Fetch a tournament from Tabroom
 
-The user is already signed in to Tabroom in Chrome. Load the `claude-in-chrome`
-skill before the first browser call. Work in a new tab.
+The user is signed in to Tabroom in the built-in Claude browser (the
+`mcp__Claude_Browser__*` tools), not Chrome. Load the `built-in-browser` skill
+before the first browser call, and open Tabroom with `preview_start` and a `url`.
+
+Downloads from the browser pane do not reach `~/Downloads`. Do not click the
+export buttons. Instead, capture the CSV text in the page with
+`javascript_tool` and write the files yourself (see "Capturing a CSV" below).
 
 ## Inputs
 
@@ -26,10 +31,11 @@ Set `DEST=tournaments/<format>/<slug>` (relative to the repo root) and `mkdir -p
 
 ## 1. Entries list
 
-1. Open the tournament on Tabroom and find the entries/field list for the event.
-2. Download the CSV export of the entries list for that event only.
-3. Move the downloaded file from `~/Downloads` to `$DEST/entries.csv`. Use the
-   newest matching file (`ls -t ~/Downloads | head`).
+1. Open the event's field page:
+   `/index/tourn/fields.mhtml?tourn_id=<tourn_id>&event_id=<event_id>`. The
+   event ids are the options of the event `<select>` on the results page.
+2. Capture the `fieldsort` table and write it to `$DEST/entries.csv`.
+3. Check that the row count matches the "N entries" count on the page.
 4. Check the header. It must have at least `Institution,Location,Entry,Code`
    (Tabroom also adds `Status,Record`). Do not add a `hash` column; the code
    writes that itself.
@@ -39,12 +45,35 @@ Set `DEST=tournaments/<format>/<slug>` (relative to the repo root) and `mkdir -p
 1. Open the event's results page and list every round in order: prelims, then
    elims (runoffs, triples, doubles, octas, quarters, semis, finals). Write down
    each round's name and its Tabroom round id (the `round_id` in the URL).
-2. For each round, download its results CSV. Tabroom names these
-   `Tabroom-<round_id>.csv`. Move each one from `~/Downloads` into `$DEST`.
-   Download them one at a time and move each file before you start the next,
-   so files don't get mixed up or saved as `(1)` duplicates.
-3. Every round CSV starts with `Aff,Neg,Judge,Win,...`. Delete and re-download
-   any file that doesn't (for example an HTML error page).
+2. Capture each round's table (its id is the round id) on
+   `/index/tourn/results/round_results.mhtml?tourn_id=<tourn_id>&round_id=<round_id>`
+   and write it to `$DEST/Tabroom-<round_id>.csv`.
+3. Every round CSV starts with `Aff,Neg,Judge,Win` (prelims) or
+   `Aff,Neg,Judges,Votes,Win` (elims). Recapture any that doesn't.
+
+### Capturing a CSV
+
+Tabroom's export button runs the tablesorter `output` widget. Set its callback
+to keep the text instead of downloading it, then click the button:
+
+```js
+const c = document.getElementById(TABLE_ID).config;
+c.widgetOptions.output_saveRows = 'all';
+c.widgetOptions.output_callback = (cfg, data) => { window.__csv = data; return false; };
+document.getElementById('output_' + TABLE_ID).click();
+```
+
+To get every round in one call, load each round page in an off-screen iframe
+(`position:absolute;left:-5000px`, not `display:none`), run the same code on
+`iframe.contentWindow`, and collect the results into one object. Values on
+`window` are lost when the tab navigates, so return them in the same call.
+
+To move the text to disk: return `JSON.stringify` of `{name: {len, body}}`.
+Elim cells contain long runs of tabs, so shorten them in the body
+(``body.replace(/\t+/g, m => `<T${m.length}>`)``) and expand them again when you
+write. Save the JSON to the scratchpad with Write, then write each file with a
+short Python script that expands the tabs and checks that each file's length
+equals `len`. Recapture any file that fails the check.
 
 ### Round order (important)
 
