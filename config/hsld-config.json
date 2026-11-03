@@ -18,21 +18,21 @@
     "Matthew Jacob",
     "Pranav Narra"
   ],
-  "tournaments": [
-    "loyola-rr",
-    "loyola",
-    "ukso",
-    "grapevine",
-    "greenhill-rr",
-    "greenhill",
-    "mid-america-cup",
-    "jack-howe",
-    "nano-nagle",
-    "bronx",
-    "heart-of-texas",
-    "blue-key",
-    "meadows"
-  ],
+  "tournaments": {
+    "loyola-rr": "2026-09-03",
+    "loyola": "2026-09-04",
+    "ukso": "2026-09-11",
+    "grapevine": "2026-09-11",
+    "greenhill-rr": "2026-09-15",
+    "greenhill": "2026-09-16",
+    "mid-america-cup": "2026-09-25",
+    "jack-howe": "2026-10-03",
+    "nano-nagle": "2026-10-10",
+    "bronx": "2026-10-16",
+    "heart-of-texas": "2026-10-16",
+    "blue-key": "2026-10-29",
+    "meadows": "2026-10-30"
+  },
   "topic_boundaries": {
     "sepoct_end": "meadows",
     "novdec_end": "isidore"

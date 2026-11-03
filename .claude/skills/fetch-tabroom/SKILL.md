@@ -88,10 +88,10 @@ results depend on that order.
 
 ## 3. Register in config
 
-Add the slug to `"tournaments"` in `config/<format>-config.json` in
-**chronological** order, which is not always the end of the list. A round robin
-goes right before its main tournament (`"greenhill-rr", "greenhill"`). If you
-can't tell where it goes, ask. Don't touch `majors` unless the user says so.
+Add `"<slug>": "<YYYY-MM-DD>"` to the `"tournaments"` map in
+`config/<format>-config.json`, using the event's start date from Tabroom (for a
+round robin, use the day before its main tournament starts). The code sorts
+tournaments by this date. Entries with the same date run in file order. Don't touch `majors` unless the user says so.
 
 ## 4. Verify
 

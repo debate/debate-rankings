@@ -25,7 +25,7 @@ class RankingStatisticsTest(unittest.TestCase):
             (root / "config.json").write_text(
                 json.dumps(
                     {
-                        "tournaments": ["invitational"],
+                        "tournaments": {"invitational": "2026-09-01"},
                         "majors": ["invitational"],
                         "multi_team_debaters": [],
                     }
@@ -124,7 +124,7 @@ class RankingStatisticsTest(unittest.TestCase):
             (root / "config.json").write_text(
                 json.dumps(
                     {
-                        "tournaments": ["kentucky-rr"],
+                        "tournaments": {"kentucky-rr": "2026-09-01"},
                         "majors": [],
                         "multi_team_debaters": [],
                     }

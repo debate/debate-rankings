@@ -1,12 +1,12 @@
 {
   "multi_team_debaters": ["Balu & Iyengar", "Ashok & Lohani"],
-  "tournaments": [
-    "ukso",
-    "grapevine",
-    "mid-america-cup",
-    "nano-nagle",
-    "bronx",
-    "blue-key"
-  ],
+  "tournaments": {
+    "ukso": "2026-09-11",
+    "grapevine": "2026-09-11",
+    "mid-america-cup": "2026-09-25",
+    "nano-nagle": "2026-10-10",
+    "bronx": "2026-10-16",
+    "blue-key": "2026-10-29"
+  },
   "majors": []
 }

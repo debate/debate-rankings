@@ -1,12 +1,12 @@
 {
-  "tournaments": [
-    "greenhill-rr",
-    "greenhill",
-    "mid-america-cup",
-    "trevian",
-    "heart-of-texas",
-    "michigan"
-  ],
+  "tournaments": {
+    "greenhill-rr": "2026-09-15",
+    "greenhill": "2026-09-16",
+    "mid-america-cup": "2026-09-25",
+    "trevian": "2026-10-10",
+    "heart-of-texas": "2026-10-16",
+    "michigan": "2026-10-30"
+  },
   "majors": [
     "heart-of-texas",
     "glenbrooks",
@@ -19,4 +19,3 @@
     "toc"
   ]
 }
-

@@ -1,10 +1,10 @@
 {
-  "tournaments": [
-    "northwestern",
-    "kentucky-rr",
-    "kentucky",
-    "minnesota",
-    "harvard"
-  ],
+  "tournaments": {
+    "northwestern": "2026-09-12",
+    "kentucky-rr": "2026-09-25",
+    "kentucky": "2026-09-26",
+    "minnesota": "2026-10-16",
+    "harvard": "2026-10-30"
+  },
   "majors": []
 }
