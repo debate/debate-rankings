@@ -1,10 +1,12 @@
 {
   "tournaments": {
+    "niles": "2026-08-29",
     "greenhill-rr": "2026-09-15",
     "greenhill": "2026-09-16",
     "mid-america-cup": "2026-09-25",
     "trevian": "2026-10-10",
     "heart-of-texas": "2026-10-16",
+    "heritage-hall": "2026-10-23",
     "michigan": "2026-10-30"
   },
   "majors": [
