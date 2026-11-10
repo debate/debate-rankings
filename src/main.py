@@ -85,8 +85,8 @@ class RankingSystem:
         votes = round_row.get("Votes")
         if isinstance(votes, str):
             tokens = votes.lower().split()
-            aff_ballots = sum(token in ("aff", "pro") for token in tokens)
-            neg_ballots = sum(token in ("neg", "con") for token in tokens)
+            aff_ballots = sum(token in ("aff", "pro", "affirmative") for token in tokens)
+            neg_ballots = sum(token in ("neg", "con", "negative") for token in tokens)
             if aff_ballots + neg_ballots > 0:
                 return aff_ballots, neg_ballots
         return (1, 0) if aff_won else (0, 1)
@@ -104,8 +104,15 @@ class RankingSystem:
         )
         file = f"./tournaments/{tournament_path}/{round}.csv"
         round_data = pd.read_csv(file)
-        # Normalize PF "Pro"/"Con" column names to "Aff"/"Neg"
-        round_data = round_data.rename(columns={"Pro": "Aff", "Con": "Neg"})
+        # Normalize "Pro"/"Con" (PF) and "Affirmative"/"Negative" column names
+        round_data = round_data.rename(
+            columns={
+                "Pro": "Aff",
+                "Con": "Neg",
+                "Affirmative": "Aff",
+                "Negative": "Neg",
+            }
+        )
         is_elimination = self._is_elimination_round(round, round_data.columns)
         round_data = self.replace_codes_with_hashes(round_data, tournament)
 
